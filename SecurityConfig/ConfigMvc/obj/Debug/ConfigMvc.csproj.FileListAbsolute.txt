@@ -1,0 +1,5 @@
+D:\PROJECTS\Tests\R_N_D\SecurityConfig\ConfigMvc\bin\ConfigMvc.dll
+D:\PROJECTS\Tests\R_N_D\SecurityConfig\ConfigMvc\bin\ConfigMvc.pdb
+D:\PROJECTS\Tests\R_N_D\SecurityConfig\ConfigMvc\obj\Debug\ResolveAssemblyReference.cache
+D:\PROJECTS\Tests\R_N_D\SecurityConfig\ConfigMvc\obj\Debug\ConfigMvc.dll
+D:\PROJECTS\Tests\R_N_D\SecurityConfig\ConfigMvc\obj\Debug\ConfigMvc.pdb

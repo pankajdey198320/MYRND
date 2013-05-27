@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\Files\Security Config" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="ucMenu.ascx" publishTime="06/28/2012 12:03:56" />
+    <file relUrl="Screen.aspx" publishTime="05/07/2012 13:11:32" />
+    <file relUrl="Global.asax" publishTime="05/03/2012 17:36:57" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="05/03/2012 17:36:57" />
+    <file relUrl="Site.Master" publishTime="05/03/2012 17:36:57" />
+    <file relUrl="bin/SecurityConfig.pdb" publishTime="07/06/2012 17:04:58" />
+    <file relUrl="TestJS.aspx" publishTime="06/28/2012 10:32:54" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="05/03/2012 17:36:57" />
+    <file relUrl="bin/SecurityConfig.dll" publishTime="07/06/2012 17:04:58" />
+    <file relUrl="ucMenuMapItem.ascx" publishTime="07/05/2012 18:29:22" />
+    <file relUrl="AddMethod.aspx" publishTime="07/03/2012 15:24:54" />
+    <file relUrl="ucAddMethod.ascx" publishTime="06/19/2012 13:13:22" />
+    <file relUrl="Account/Web.config" publishTime="05/03/2012 17:36:57" />
+    <file relUrl="Account/Register.aspx" publishTime="05/03/2012 17:36:57" />
+    <file relUrl="Account/Login.aspx" publishTime="05/03/2012 17:36:57" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="05/03/2012 17:36:57" />
+    <file relUrl="TempletMenuMap.aspx" publishTime="07/02/2012 12:36:30" />
+    <file relUrl="section.aspx" publishTime="05/07/2012 13:11:41" />
+    <file relUrl="Account/ChangePasswordSuccess.aspx" publishTime="05/03/2012 17:36:57" />
+    <file relUrl="EditMenuMapp.aspx" publishTime="07/05/2012 18:22:15" />
+    <file relUrl="OperationActionMap.aspx" publishTime="06/29/2012 14:14:56" />
+    <file relUrl="Config.ascx" publishTime="07/03/2012 15:53:54" />
+    <file relUrl="Account/ChangePassword.aspx" publishTime="05/03/2012 17:36:57" />
+    <file relUrl="Web.config" publishTime="07/06/2012 17:05:15" />
+    <file relUrl="ucMethodArgumentComparator.ascx" publishTime="06/28/2012 10:52:33" />
+    <file relUrl="Styles/Site.css" publishTime="05/03/2012 17:36:57" />
+    <file relUrl="Module.aspx" publishTime="05/07/2012 13:06:33" />
+    <file relUrl="ConfigINS.aspx" publishTime="05/07/2012 13:06:19" />
+  </publishProfile>
+</publishData>
