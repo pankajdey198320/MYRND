@@ -1,0 +1,862 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Medappz2_LiveModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="Medappz2_LiveModelStoreContainer">
+          <EntitySet Name="L_SECU_ALL_METHODS" EntityType="Medappz2_LiveModel.Store.L_SECU_ALL_METHODS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="L_SECU_COMPARATOR_VALUE" EntityType="Medappz2_LiveModel.Store.L_SECU_COMPARATOR_VALUE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="L_SECU_CONFIG" EntityType="Medappz2_LiveModel.Store.L_SECU_CONFIG" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="L_SECU_CONFIG_TYPE" EntityType="Medappz2_LiveModel.Store.L_SECU_CONFIG_TYPE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="L_SECU_METHOD_ARG_COMPARATOR" EntityType="Medappz2_LiveModel.Store.L_SECU_METHOD_ARG_COMPARATOR" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="L_SECU_MNU_OP_MAP" EntityType="Medappz2_LiveModel.Store.L_SECU_MNU_OP_MAP" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="l_SECU_MP_OPERATION_PERMISSION" EntityType="Medappz2_LiveModel.Store.l_SECU_MP_OPERATION_PERMISSION" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="l_SECU_OPERATION_ACTION" EntityType="Medappz2_LiveModel.Store.l_SECU_OPERATION_ACTION" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="L_SECU_PERMISSION_LEVEL" EntityType="Medappz2_LiveModel.Store.L_SECU_PERMISSION_LEVEL" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="L_SECU_SECTION_OPERATION_MAP" EntityType="Medappz2_LiveModel.Store.L_SECU_SECTION_OPERATION_MAP" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="L_V_UTILITY_MENU" EntityType="Medappz2_LiveModel.Store.L_V_UTILITY_MENU" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_L_ACTION_FK_MAP" Association="Medappz2_LiveModel.Store.FK_L_ACTION_FK_MAP">
+            <End Role="l_SECU_OPERATION_ACTION" EntitySet="l_SECU_OPERATION_ACTION" />
+            <End Role="L_SECU_SECTION_OPERATION_MAP" EntitySet="L_SECU_SECTION_OPERATION_MAP" />
+          </AssociationSet>
+          <AssociationSet Name="FK_L_SECU_COMPARATOR_L_SECU_MENU_MAP_COMPARATOR" Association="Medappz2_LiveModel.Store.FK_L_SECU_COMPARATOR_L_SECU_MENU_MAP_COMPARATOR">
+            <End Role="L_SECU_METHOD_ARG_COMPARATOR" EntitySet="L_SECU_METHOD_ARG_COMPARATOR" />
+            <End Role="L_SECU_COMPARATOR_VALUE" EntitySet="L_SECU_COMPARATOR_VALUE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_L_SECU_COMPARATOR_VALUE_L_SECU_MNU_OP_MAP" Association="Medappz2_LiveModel.Store.FK_L_SECU_COMPARATOR_VALUE_L_SECU_MNU_OP_MAP">
+            <End Role="L_SECU_MNU_OP_MAP" EntitySet="L_SECU_MNU_OP_MAP" />
+            <End Role="L_SECU_COMPARATOR_VALUE" EntitySet="L_SECU_COMPARATOR_VALUE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_L_SECU_CONFIG_L_SECU_CONFIG" Association="Medappz2_LiveModel.Store.FK_L_SECU_CONFIG_L_SECU_CONFIG">
+            <End Role="L_SECU_CONFIG_TYPE" EntitySet="L_SECU_CONFIG_TYPE" />
+            <End Role="L_SECU_CONFIG" EntitySet="L_SECU_CONFIG" />
+          </AssociationSet>
+          <AssociationSet Name="FK_L_SECU_CONFIG_L_SECU_PERMISSION_LEVEL" Association="Medappz2_LiveModel.Store.FK_L_SECU_CONFIG_L_SECU_PERMISSION_LEVEL">
+            <End Role="L_SECU_PERMISSION_LEVEL" EntitySet="L_SECU_PERMISSION_LEVEL" />
+            <End Role="L_SECU_CONFIG" EntitySet="L_SECU_CONFIG" />
+          </AssociationSet>
+          <AssociationSet Name="FK_L_SECU_METHOD_ARG_COMPARATOR_L_SECU_ALL_METHODS" Association="Medappz2_LiveModel.Store.FK_L_SECU_METHOD_ARG_COMPARATOR_L_SECU_ALL_METHODS">
+            <End Role="L_SECU_ALL_METHODS" EntitySet="L_SECU_ALL_METHODS" />
+            <End Role="L_SECU_METHOD_ARG_COMPARATOR" EntitySet="L_SECU_METHOD_ARG_COMPARATOR" />
+          </AssociationSet>
+          <AssociationSet Name="FK_L_SECU_MNU_OP_MAP_L_SECU_SECTION_OPERATION_MAP" Association="Medappz2_LiveModel.Store.FK_L_SECU_MNU_OP_MAP_L_SECU_SECTION_OPERATION_MAP">
+            <End Role="L_SECU_SECTION_OPERATION_MAP" EntitySet="L_SECU_SECTION_OPERATION_MAP" />
+            <End Role="L_SECU_MNU_OP_MAP" EntitySet="L_SECU_MNU_OP_MAP" />
+          </AssociationSet>
+          <AssociationSet Name="FK_l_SECU_MP_OPERATION_MP_PERMISSION" Association="Medappz2_LiveModel.Store.FK_l_SECU_MP_OPERATION_MP_PERMISSION">
+            <End Role="L_SECU_SECTION_OPERATION_MAP" EntitySet="L_SECU_SECTION_OPERATION_MAP" />
+            <End Role="l_SECU_MP_OPERATION_PERMISSION" EntitySet="l_SECU_MP_OPERATION_PERMISSION" />
+          </AssociationSet>
+          <AssociationSet Name="FK_L_SECU_SECTION_OPERATION_MAP_L_SECU_ALL_METHOD" Association="Medappz2_LiveModel.Store.FK_L_SECU_SECTION_OPERATION_MAP_L_SECU_ALL_METHOD">
+            <End Role="L_SECU_ALL_METHODS" EntitySet="L_SECU_ALL_METHODS" />
+            <End Role="L_SECU_SECTION_OPERATION_MAP" EntitySet="L_SECU_SECTION_OPERATION_MAP" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SECTION_CONFIG_ID" Association="Medappz2_LiveModel.Store.FK_SECTION_CONFIG_ID">
+            <End Role="L_SECU_CONFIG" EntitySet="L_SECU_CONFIG" />
+            <End Role="L_SECU_SECTION_OPERATION_MAP" EntitySet="L_SECU_SECTION_OPERATION_MAP" />
+          </AssociationSet>
+          <AssociationSet Name="L_V_UTILITY_MENU_FK_PARENT_ID" Association="Medappz2_LiveModel.Store.L_V_UTILITY_MENU_FK_PARENT_ID">
+            <End Role="L_V_UTILITY_MENU" EntitySet="L_V_UTILITY_MENU" />
+            <End Role="L_V_UTILITY_MENU1" EntitySet="L_V_UTILITY_MENU" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="L_SECU_ALL_METHODS">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Name="PK_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="METHOD_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ROW_STATUS" Type="int" Nullable="false" />
+          <Property Name="CLASS_NAME" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="L_SECU_COMPARATOR_VALUE">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Name="PK_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FK_COMPARATOR_ID" Type="bigint" Nullable="false" />
+          <Property Name="PARAM_VALUE" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="FK_MENU_MAP_ID" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="L_SECU_CONFIG">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Name="PK_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="DESCRIPTION" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="REFERANCE" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="FK_PERMISSION_LEVEL_ID" Type="bigint" Nullable="false" />
+          <Property Name="FK_PK_PARENT_ID" Type="bigint" Nullable="false" />
+          <Property Name="FK_SCE_CONFIG_TYPE" Type="bigint" Nullable="false" />
+          <Property Name="ROW_STATUS" Type="tinyint" Nullable="false" />
+          <Property Name="CREATION_DATE" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="L_SECU_CONFIG_TYPE">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Name="PK_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ROW_STATUS" Type="tinyint" Nullable="false" />
+          <Property Name="CREATION_DATE" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="L_SECU_METHOD_ARG_COMPARATOR">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Name="PK_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FK_METHOD_ID" Type="bigint" Nullable="false" />
+          <Property Name="PARAM_KEY" Type="nvarchar" MaxLength="50" />
+          <Property Name="PARAM_INDEX" Type="int" />
+          <Property Name="TYPE" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="L_SECU_MNU_OP_MAP">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Name="PK_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FK_OPERATION_MAP_ID" Type="bigint" Nullable="false" />
+          <Property Name="REFERANCE" Type="bigint" Nullable="false" />
+          <Property Name="OPERATION_MODE" Type="int" />
+        </EntityType>
+        <EntityType Name="l_SECU_MP_OPERATION_PERMISSION">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Name="PK_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FK_OPERATION_MAP_ID" Type="bigint" Nullable="false" />
+          <Property Name="FK_USER_ID" Type="bigint" Nullable="false" />
+          <Property Name="IS_PERMITTED" Type="bit" Nullable="false" />
+          <Property Name="ROW_STATUS" Type="smallint" Nullable="false" />
+          <Property Name="CREATION_DATE" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="l_SECU_OPERATION_ACTION">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Name="PK_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ACTION_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="DESXRIPTION" Type="nchar" MaxLength="10" />
+          <Property Name="ROW_STATUS" Type="smallint" Nullable="false" />
+          <Property Name="CREATION_DATE" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="L_SECU_PERMISSION_LEVEL">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Name="PK_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ROW_STATUS" Type="tinyint" Nullable="false" />
+          <Property Name="CREATION_DATE" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="L_SECU_SECTION_OPERATION_MAP">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Name="PK_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="OPERATION_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="FK_SCE_CONFIG_ID" Type="bigint" Nullable="false" />
+          <Property Name="FK_ACTION_ID" Type="bigint" Nullable="false" />
+          <Property Name="ROW_STATUS" Type="smallint" Nullable="false" />
+          <Property Name="CREATION_DATE" Type="datetime" Nullable="false" />
+          <Property Name="FK_METHOD_ID" Type="bigint" />
+        </EntityType>
+        <EntityType Name="L_V_UTILITY_MENU">
+          <Key>
+            <PropertyRef Name="PK_MENU_ID" />
+          </Key>
+          <Property Name="PK_MENU_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FK_MODULE_ID" Type="int" />
+          <Property Name="MENU_NAME" Type="varchar" MaxLength="50" />
+          <Property Name="FK_PARENT_ID" Type="bigint" />
+          <Property Name="FK_PARENT_MODULE_ID" Type="bigint" />
+          <Property Name="LEVEL" Type="int" />
+          <Property Name="ROW_STATUS" Type="int" />
+          <Property Name="HTML_ID" Type="nvarchar" MaxLength="50" />
+          <Property Name="ORDER" Type="int" />
+          <Property Name="FK_MODULE_NAME" Type="nvarchar" MaxLength="100" />
+          <Property Name="SCREEN_ID" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_L_ACTION_FK_MAP">
+          <End Role="l_SECU_OPERATION_ACTION" Type="Medappz2_LiveModel.Store.l_SECU_OPERATION_ACTION" Multiplicity="1" />
+          <End Role="L_SECU_SECTION_OPERATION_MAP" Type="Medappz2_LiveModel.Store.L_SECU_SECTION_OPERATION_MAP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="l_SECU_OPERATION_ACTION">
+              <PropertyRef Name="PK_ID" />
+            </Principal>
+            <Dependent Role="L_SECU_SECTION_OPERATION_MAP">
+              <PropertyRef Name="FK_ACTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_L_SECU_COMPARATOR_L_SECU_MENU_MAP_COMPARATOR">
+          <End Role="L_SECU_METHOD_ARG_COMPARATOR" Type="Medappz2_LiveModel.Store.L_SECU_METHOD_ARG_COMPARATOR" Multiplicity="1" />
+          <End Role="L_SECU_COMPARATOR_VALUE" Type="Medappz2_LiveModel.Store.L_SECU_COMPARATOR_VALUE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="L_SECU_METHOD_ARG_COMPARATOR">
+              <PropertyRef Name="PK_ID" />
+            </Principal>
+            <Dependent Role="L_SECU_COMPARATOR_VALUE">
+              <PropertyRef Name="FK_COMPARATOR_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_L_SECU_COMPARATOR_VALUE_L_SECU_MNU_OP_MAP">
+          <End Role="L_SECU_MNU_OP_MAP" Type="Medappz2_LiveModel.Store.L_SECU_MNU_OP_MAP" Multiplicity="1" />
+          <End Role="L_SECU_COMPARATOR_VALUE" Type="Medappz2_LiveModel.Store.L_SECU_COMPARATOR_VALUE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="L_SECU_MNU_OP_MAP">
+              <PropertyRef Name="PK_ID" />
+            </Principal>
+            <Dependent Role="L_SECU_COMPARATOR_VALUE">
+              <PropertyRef Name="FK_MENU_MAP_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_L_SECU_CONFIG_L_SECU_CONFIG">
+          <End Role="L_SECU_CONFIG_TYPE" Type="Medappz2_LiveModel.Store.L_SECU_CONFIG_TYPE" Multiplicity="1" />
+          <End Role="L_SECU_CONFIG" Type="Medappz2_LiveModel.Store.L_SECU_CONFIG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="L_SECU_CONFIG_TYPE">
+              <PropertyRef Name="PK_ID" />
+            </Principal>
+            <Dependent Role="L_SECU_CONFIG">
+              <PropertyRef Name="FK_SCE_CONFIG_TYPE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_L_SECU_CONFIG_L_SECU_PERMISSION_LEVEL">
+          <End Role="L_SECU_PERMISSION_LEVEL" Type="Medappz2_LiveModel.Store.L_SECU_PERMISSION_LEVEL" Multiplicity="1" />
+          <End Role="L_SECU_CONFIG" Type="Medappz2_LiveModel.Store.L_SECU_CONFIG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="L_SECU_PERMISSION_LEVEL">
+              <PropertyRef Name="PK_ID" />
+            </Principal>
+            <Dependent Role="L_SECU_CONFIG">
+              <PropertyRef Name="FK_PERMISSION_LEVEL_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_L_SECU_METHOD_ARG_COMPARATOR_L_SECU_ALL_METHODS">
+          <End Role="L_SECU_ALL_METHODS" Type="Medappz2_LiveModel.Store.L_SECU_ALL_METHODS" Multiplicity="1" />
+          <End Role="L_SECU_METHOD_ARG_COMPARATOR" Type="Medappz2_LiveModel.Store.L_SECU_METHOD_ARG_COMPARATOR" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="L_SECU_ALL_METHODS">
+              <PropertyRef Name="PK_ID" />
+            </Principal>
+            <Dependent Role="L_SECU_METHOD_ARG_COMPARATOR">
+              <PropertyRef Name="FK_METHOD_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_L_SECU_MNU_OP_MAP_L_SECU_SECTION_OPERATION_MAP">
+          <End Role="L_SECU_SECTION_OPERATION_MAP" Type="Medappz2_LiveModel.Store.L_SECU_SECTION_OPERATION_MAP" Multiplicity="1" />
+          <End Role="L_SECU_MNU_OP_MAP" Type="Medappz2_LiveModel.Store.L_SECU_MNU_OP_MAP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="L_SECU_SECTION_OPERATION_MAP">
+              <PropertyRef Name="PK_ID" />
+            </Principal>
+            <Dependent Role="L_SECU_MNU_OP_MAP">
+              <PropertyRef Name="FK_OPERATION_MAP_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_l_SECU_MP_OPERATION_MP_PERMISSION">
+          <End Role="L_SECU_SECTION_OPERATION_MAP" Type="Medappz2_LiveModel.Store.L_SECU_SECTION_OPERATION_MAP" Multiplicity="1" />
+          <End Role="l_SECU_MP_OPERATION_PERMISSION" Type="Medappz2_LiveModel.Store.l_SECU_MP_OPERATION_PERMISSION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="L_SECU_SECTION_OPERATION_MAP">
+              <PropertyRef Name="PK_ID" />
+            </Principal>
+            <Dependent Role="l_SECU_MP_OPERATION_PERMISSION">
+              <PropertyRef Name="FK_OPERATION_MAP_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_L_SECU_SECTION_OPERATION_MAP_L_SECU_ALL_METHOD">
+          <End Role="L_SECU_ALL_METHODS" Type="Medappz2_LiveModel.Store.L_SECU_ALL_METHODS" Multiplicity="0..1" />
+          <End Role="L_SECU_SECTION_OPERATION_MAP" Type="Medappz2_LiveModel.Store.L_SECU_SECTION_OPERATION_MAP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="L_SECU_ALL_METHODS">
+              <PropertyRef Name="PK_ID" />
+            </Principal>
+            <Dependent Role="L_SECU_SECTION_OPERATION_MAP">
+              <PropertyRef Name="FK_METHOD_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SECTION_CONFIG_ID">
+          <End Role="L_SECU_CONFIG" Type="Medappz2_LiveModel.Store.L_SECU_CONFIG" Multiplicity="1" />
+          <End Role="L_SECU_SECTION_OPERATION_MAP" Type="Medappz2_LiveModel.Store.L_SECU_SECTION_OPERATION_MAP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="L_SECU_CONFIG">
+              <PropertyRef Name="PK_ID" />
+            </Principal>
+            <Dependent Role="L_SECU_SECTION_OPERATION_MAP">
+              <PropertyRef Name="FK_SCE_CONFIG_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="L_V_UTILITY_MENU_FK_PARENT_ID">
+          <End Role="L_V_UTILITY_MENU" Type="Medappz2_LiveModel.Store.L_V_UTILITY_MENU" Multiplicity="0..1" />
+          <End Role="L_V_UTILITY_MENU1" Type="Medappz2_LiveModel.Store.L_V_UTILITY_MENU" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="L_V_UTILITY_MENU">
+              <PropertyRef Name="PK_MENU_ID" />
+            </Principal>
+            <Dependent Role="L_V_UTILITY_MENU1">
+              <PropertyRef Name="FK_PARENT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Medappz2_LiveModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="Medappz2_LiveEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="L_SECU_CONFIG" EntityType="Medappz2_LiveModel.L_SECU_CONFIG" />
+          <EntitySet Name="L_SECU_CONFIG_TYPE" EntityType="Medappz2_LiveModel.L_SECU_CONFIG_TYPE" />
+          <EntitySet Name="l_SECU_MP_OPERATION_PERMISSION" EntityType="Medappz2_LiveModel.l_SECU_MP_OPERATION_PERMISSION" />
+          <EntitySet Name="l_SECU_OPERATION_ACTION" EntityType="Medappz2_LiveModel.l_SECU_OPERATION_ACTION" />
+          <EntitySet Name="L_SECU_PERMISSION_LEVEL" EntityType="Medappz2_LiveModel.L_SECU_PERMISSION_LEVEL" />
+          <AssociationSet Name="FK_L_SECU_CONFIG_L_SECU_CONFIG" Association="Medappz2_LiveModel.FK_L_SECU_CONFIG_L_SECU_CONFIG">
+            <End Role="L_SECU_CONFIG_TYPE" EntitySet="L_SECU_CONFIG_TYPE" />
+            <End Role="L_SECU_CONFIG" EntitySet="L_SECU_CONFIG" />
+          </AssociationSet>
+          <AssociationSet Name="FK_L_SECU_CONFIG_L_SECU_PERMISSION_LEVEL" Association="Medappz2_LiveModel.FK_L_SECU_CONFIG_L_SECU_PERMISSION_LEVEL">
+            <End Role="L_SECU_PERMISSION_LEVEL" EntitySet="L_SECU_PERMISSION_LEVEL" />
+            <End Role="L_SECU_CONFIG" EntitySet="L_SECU_CONFIG" />
+          </AssociationSet>
+          <EntitySet Name="L_V_UTILITY_MENU" EntityType="Medappz2_LiveModel.L_V_UTILITY_MENU" />
+          <EntitySet Name="L_SECU_MNU_OP_MAP" EntityType="Medappz2_LiveModel.L_SECU_MNU_OP_MAP" />
+          <AssociationSet Name="L_V_UTILITY_MENU_FK_PARENT_ID" Association="Medappz2_LiveModel.L_V_UTILITY_MENU_FK_PARENT_ID">
+            <End Role="L_V_UTILITY_MENU" EntitySet="L_V_UTILITY_MENU" />
+            <End Role="L_V_UTILITY_MENU1" EntitySet="L_V_UTILITY_MENU" />
+          </AssociationSet>
+          <EntitySet Name="L_SECU_COMPARATOR_VALUE" EntityType="Medappz2_LiveModel.L_SECU_COMPARATOR_VALUE" />
+          <AssociationSet Name="FK_L_SECU_COMPARATOR_VALUE_L_SECU_MNU_OP_MAP" Association="Medappz2_LiveModel.FK_L_SECU_COMPARATOR_VALUE_L_SECU_MNU_OP_MAP">
+            <End Role="L_SECU_MNU_OP_MAP" EntitySet="L_SECU_MNU_OP_MAP" />
+            <End Role="L_SECU_COMPARATOR_VALUE" EntitySet="L_SECU_COMPARATOR_VALUE" />
+          </AssociationSet>
+          <EntitySet Name="L_SECU_METHOD_ARG_COMPARATOR" EntityType="Medappz2_LiveModel.L_SECU_METHOD_ARG_COMPARATOR" />
+          <AssociationSet Name="FK_L_SECU_COMPARATOR_L_SECU_MENU_MAP_COMPARATOR" Association="Medappz2_LiveModel.FK_L_SECU_COMPARATOR_L_SECU_MENU_MAP_COMPARATOR">
+            <End Role="L_SECU_METHOD_ARG_COMPARATOR" EntitySet="L_SECU_METHOD_ARG_COMPARATOR" />
+            <End Role="L_SECU_COMPARATOR_VALUE" EntitySet="L_SECU_COMPARATOR_VALUE" />
+          </AssociationSet>
+          <EntitySet Name="L_SECU_ALL_METHODS" EntityType="Medappz2_LiveModel.L_SECU_ALL_METHODS" />
+          <EntitySet Name="L_SECU_SECTION_OPERATION_MAP" EntityType="Medappz2_LiveModel.L_SECU_SECTION_OPERATION_MAP" />
+          <AssociationSet Name="FK_L_SECU_METHOD_ARG_COMPARATOR_L_SECU_ALL_METHODS" Association="Medappz2_LiveModel.FK_L_SECU_METHOD_ARG_COMPARATOR_L_SECU_ALL_METHODS">
+            <End Role="L_SECU_ALL_METHODS" EntitySet="L_SECU_ALL_METHODS" />
+            <End Role="L_SECU_METHOD_ARG_COMPARATOR" EntitySet="L_SECU_METHOD_ARG_COMPARATOR" />
+          </AssociationSet>
+          <AssociationSet Name="FK_L_SECU_SECTION_OPERATION_MAP_L_SECU_ALL_METHOD" Association="Medappz2_LiveModel.FK_L_SECU_SECTION_OPERATION_MAP_L_SECU_ALL_METHOD">
+            <End Role="L_SECU_ALL_METHODS" EntitySet="L_SECU_ALL_METHODS" />
+            <End Role="L_SECU_SECTION_OPERATION_MAP" EntitySet="L_SECU_SECTION_OPERATION_MAP" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SECTION_CONFIG_ID" Association="Medappz2_LiveModel.FK_SECTION_CONFIG_ID">
+            <End Role="L_SECU_CONFIG" EntitySet="L_SECU_CONFIG" />
+            <End Role="L_SECU_SECTION_OPERATION_MAP" EntitySet="L_SECU_SECTION_OPERATION_MAP" />
+          </AssociationSet>
+          <AssociationSet Name="FK_L_SECU_MNU_OP_MAP_L_SECU_SECTION_OPERATION_MAP" Association="Medappz2_LiveModel.FK_L_SECU_MNU_OP_MAP_L_SECU_SECTION_OPERATION_MAP">
+            <End Role="L_SECU_SECTION_OPERATION_MAP" EntitySet="L_SECU_SECTION_OPERATION_MAP" />
+            <End Role="L_SECU_MNU_OP_MAP" EntitySet="L_SECU_MNU_OP_MAP" />
+          </AssociationSet>
+          <AssociationSet Name="FK_l_SECU_MP_OPERATION_MP_PERMISSION" Association="Medappz2_LiveModel.FK_l_SECU_MP_OPERATION_MP_PERMISSION">
+            <End Role="L_SECU_SECTION_OPERATION_MAP" EntitySet="L_SECU_SECTION_OPERATION_MAP" />
+            <End Role="l_SECU_MP_OPERATION_PERMISSION" EntitySet="l_SECU_MP_OPERATION_PERMISSION" />
+          </AssociationSet>
+          <AssociationSet Name="FK_L_ACTION_FK_MAP" Association="Medappz2_LiveModel.FK_L_ACTION_FK_MAP">
+            <End Role="l_SECU_OPERATION_ACTION" EntitySet="l_SECU_OPERATION_ACTION" />
+            <End Role="L_SECU_SECTION_OPERATION_MAP" EntitySet="L_SECU_SECTION_OPERATION_MAP" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="L_SECU_CONFIG">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Name="PK_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="REFERANCE" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="FK_PERMISSION_LEVEL_ID" Type="Int64" Nullable="false" />
+          <Property Name="FK_PK_PARENT_ID" Type="Int64" Nullable="false" />
+          <Property Name="FK_SCE_CONFIG_TYPE" Type="Int64" Nullable="false" />
+          <Property Name="ROW_STATUS" Type="Byte" Nullable="false" />
+          <Property Name="CREATION_DATE" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="L_SECU_CONFIG_TYPE" Relationship="Medappz2_LiveModel.FK_L_SECU_CONFIG_L_SECU_CONFIG" FromRole="L_SECU_CONFIG" ToRole="L_SECU_CONFIG_TYPE" />
+          <NavigationProperty Name="L_SECU_PERMISSION_LEVEL" Relationship="Medappz2_LiveModel.FK_L_SECU_CONFIG_L_SECU_PERMISSION_LEVEL" FromRole="L_SECU_CONFIG" ToRole="L_SECU_PERMISSION_LEVEL" />
+          <NavigationProperty Name="L_SECU_SECTION_OPERATION_MAP" Relationship="Medappz2_LiveModel.FK_SECTION_CONFIG_ID" FromRole="L_SECU_CONFIG" ToRole="L_SECU_SECTION_OPERATION_MAP" />
+        </EntityType>
+        <EntityType Name="L_SECU_CONFIG_TYPE">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Name="PK_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="ROW_STATUS" Type="Byte" Nullable="false" />
+          <Property Name="CREATION_DATE" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="L_SECU_CONFIG" Relationship="Medappz2_LiveModel.FK_L_SECU_CONFIG_L_SECU_CONFIG" FromRole="L_SECU_CONFIG_TYPE" ToRole="L_SECU_CONFIG" />
+        </EntityType>
+        <EntityType Name="l_SECU_MP_OPERATION_PERMISSION">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Name="PK_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FK_OPERATION_MAP_ID" Type="Int64" Nullable="false" />
+          <Property Name="FK_USER_ID" Type="Int64" Nullable="false" />
+          <Property Name="IS_PERMITTED" Type="Boolean" Nullable="false" />
+          <Property Name="ROW_STATUS" Type="Int16" Nullable="false" />
+          <Property Name="CREATION_DATE" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="L_SECU_SECTION_OPERATION_MAP" Relationship="Medappz2_LiveModel.FK_l_SECU_MP_OPERATION_MP_PERMISSION" FromRole="l_SECU_MP_OPERATION_PERMISSION" ToRole="L_SECU_SECTION_OPERATION_MAP" />
+        </EntityType>
+        <EntityType Name="l_SECU_OPERATION_ACTION">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Name="PK_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ACTION_NAME" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DESXRIPTION" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="ROW_STATUS" Type="Int16" Nullable="false" />
+          <Property Name="CREATION_DATE" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="L_SECU_SECTION_OPERATION_MAP" Relationship="Medappz2_LiveModel.FK_L_ACTION_FK_MAP" FromRole="l_SECU_OPERATION_ACTION" ToRole="L_SECU_SECTION_OPERATION_MAP" />
+        </EntityType>
+        <EntityType Name="L_SECU_PERMISSION_LEVEL">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Name="PK_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ROW_STATUS" Type="Byte" Nullable="false" />
+          <Property Name="CREATION_DATE" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="L_SECU_CONFIG" Relationship="Medappz2_LiveModel.FK_L_SECU_CONFIG_L_SECU_PERMISSION_LEVEL" FromRole="L_SECU_PERMISSION_LEVEL" ToRole="L_SECU_CONFIG" />
+        </EntityType>
+        <Association Name="FK_L_SECU_CONFIG_L_SECU_CONFIG">
+          <End Role="L_SECU_CONFIG_TYPE" Type="Medappz2_LiveModel.L_SECU_CONFIG_TYPE" Multiplicity="1" />
+          <End Role="L_SECU_CONFIG" Type="Medappz2_LiveModel.L_SECU_CONFIG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="L_SECU_CONFIG_TYPE">
+              <PropertyRef Name="PK_ID" />
+            </Principal>
+            <Dependent Role="L_SECU_CONFIG">
+              <PropertyRef Name="FK_SCE_CONFIG_TYPE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_L_SECU_CONFIG_L_SECU_PERMISSION_LEVEL">
+          <End Role="L_SECU_PERMISSION_LEVEL" Type="Medappz2_LiveModel.L_SECU_PERMISSION_LEVEL" Multiplicity="1" />
+          <End Role="L_SECU_CONFIG" Type="Medappz2_LiveModel.L_SECU_CONFIG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="L_SECU_PERMISSION_LEVEL">
+              <PropertyRef Name="PK_ID" />
+            </Principal>
+            <Dependent Role="L_SECU_CONFIG">
+              <PropertyRef Name="FK_PERMISSION_LEVEL_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="L_V_UTILITY_MENU">
+          <Key>
+            <PropertyRef Name="PK_MENU_ID" />
+          </Key>
+          <Property Type="Int64" Name="PK_MENU_ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="FK_MODULE_ID" />
+          <Property Type="String" Name="MENU_NAME" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="FK_PARENT_ID" />
+          <Property Type="Int64" Name="FK_PARENT_MODULE_ID" />
+          <Property Type="Int32" Name="LEVEL" />
+          <Property Type="Int32" Name="ROW_STATUS" />
+          <Property Type="String" Name="HTML_ID" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ORDER" />
+          <Property Type="String" Name="FK_MODULE_NAME" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SCREEN_ID" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="L_V_UTILITY_MENU1" Relationship="Medappz2_LiveModel.L_V_UTILITY_MENU_FK_PARENT_ID" FromRole="L_V_UTILITY_MENU" ToRole="L_V_UTILITY_MENU1" />
+          <NavigationProperty Name="L_V_UTILITY_MENU2" Relationship="Medappz2_LiveModel.L_V_UTILITY_MENU_FK_PARENT_ID" FromRole="L_V_UTILITY_MENU1" ToRole="L_V_UTILITY_MENU" />
+        </EntityType>
+        <EntityType Name="L_SECU_MNU_OP_MAP">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Type="Int64" Name="PK_ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="FK_OPERATION_MAP_ID" Nullable="false" />
+          <Property Type="Int64" Name="REFERANCE" Nullable="false" />
+          <Property Type="Int32" Name="OPERATION_MODE" />
+          <NavigationProperty Name="L_SECU_COMPARATOR_VALUE" Relationship="Medappz2_LiveModel.FK_L_SECU_COMPARATOR_VALUE_L_SECU_MNU_OP_MAP" FromRole="L_SECU_MNU_OP_MAP" ToRole="L_SECU_COMPARATOR_VALUE" />
+          <NavigationProperty Name="L_SECU_SECTION_OPERATION_MAP" Relationship="Medappz2_LiveModel.FK_L_SECU_MNU_OP_MAP_L_SECU_SECTION_OPERATION_MAP" FromRole="L_SECU_MNU_OP_MAP" ToRole="L_SECU_SECTION_OPERATION_MAP" />
+        </EntityType>
+        <Association Name="L_V_UTILITY_MENU_FK_PARENT_ID">
+          <End Type="Medappz2_LiveModel.L_V_UTILITY_MENU" Role="L_V_UTILITY_MENU" Multiplicity="0..1" />
+          <End Type="Medappz2_LiveModel.L_V_UTILITY_MENU" Role="L_V_UTILITY_MENU1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="L_V_UTILITY_MENU">
+              <PropertyRef Name="PK_MENU_ID" />
+            </Principal>
+            <Dependent Role="L_V_UTILITY_MENU1">
+              <PropertyRef Name="FK_PARENT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="L_SECU_COMPARATOR_VALUE">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Type="Int64" Name="PK_ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="FK_COMPARATOR_ID" Nullable="false" />
+          <Property Type="String" Name="PARAM_VALUE" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="FK_MENU_MAP_ID" Nullable="false" />
+          <NavigationProperty Name="L_SECU_MNU_OP_MAP" Relationship="Medappz2_LiveModel.FK_L_SECU_COMPARATOR_VALUE_L_SECU_MNU_OP_MAP" FromRole="L_SECU_COMPARATOR_VALUE" ToRole="L_SECU_MNU_OP_MAP" />
+          <NavigationProperty Name="L_SECU_METHOD_ARG_COMPARATOR" Relationship="Medappz2_LiveModel.FK_L_SECU_COMPARATOR_L_SECU_MENU_MAP_COMPARATOR" FromRole="L_SECU_COMPARATOR_VALUE" ToRole="L_SECU_METHOD_ARG_COMPARATOR" />
+        </EntityType>
+        <Association Name="FK_L_SECU_COMPARATOR_VALUE_L_SECU_MNU_OP_MAP">
+          <End Type="Medappz2_LiveModel.L_SECU_MNU_OP_MAP" Role="L_SECU_MNU_OP_MAP" Multiplicity="1" />
+          <End Type="Medappz2_LiveModel.L_SECU_COMPARATOR_VALUE" Role="L_SECU_COMPARATOR_VALUE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="L_SECU_MNU_OP_MAP">
+              <PropertyRef Name="PK_ID" />
+            </Principal>
+            <Dependent Role="L_SECU_COMPARATOR_VALUE">
+              <PropertyRef Name="FK_MENU_MAP_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="L_SECU_METHOD_ARG_COMPARATOR">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Type="Int64" Name="PK_ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="FK_METHOD_ID" Nullable="false" />
+          <Property Type="String" Name="PARAM_KEY" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="PARAM_INDEX" />
+          <Property Type="Int32" Name="TYPE" Nullable="false" />
+          <NavigationProperty Name="L_SECU_COMPARATOR_VALUE" Relationship="Medappz2_LiveModel.FK_L_SECU_COMPARATOR_L_SECU_MENU_MAP_COMPARATOR" FromRole="L_SECU_METHOD_ARG_COMPARATOR" ToRole="L_SECU_COMPARATOR_VALUE" />
+          <NavigationProperty Name="L_SECU_ALL_METHODS" Relationship="Medappz2_LiveModel.FK_L_SECU_METHOD_ARG_COMPARATOR_L_SECU_ALL_METHODS" FromRole="L_SECU_METHOD_ARG_COMPARATOR" ToRole="L_SECU_ALL_METHODS" />
+        </EntityType>
+        <Association Name="FK_L_SECU_COMPARATOR_L_SECU_MENU_MAP_COMPARATOR">
+          <End Type="Medappz2_LiveModel.L_SECU_METHOD_ARG_COMPARATOR" Role="L_SECU_METHOD_ARG_COMPARATOR" Multiplicity="1" />
+          <End Type="Medappz2_LiveModel.L_SECU_COMPARATOR_VALUE" Role="L_SECU_COMPARATOR_VALUE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="L_SECU_METHOD_ARG_COMPARATOR">
+              <PropertyRef Name="PK_ID" />
+            </Principal>
+            <Dependent Role="L_SECU_COMPARATOR_VALUE">
+              <PropertyRef Name="FK_COMPARATOR_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="L_SECU_ALL_METHODS">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Type="Int64" Name="PK_ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="METHOD_NAME" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ROW_STATUS" Nullable="false" />
+          <Property Type="String" Name="CLASS_NAME" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="L_SECU_METHOD_ARG_COMPARATOR" Relationship="Medappz2_LiveModel.FK_L_SECU_METHOD_ARG_COMPARATOR_L_SECU_ALL_METHODS" FromRole="L_SECU_ALL_METHODS" ToRole="L_SECU_METHOD_ARG_COMPARATOR" />
+          <NavigationProperty Name="L_SECU_SECTION_OPERATION_MAP" Relationship="Medappz2_LiveModel.FK_L_SECU_SECTION_OPERATION_MAP_L_SECU_ALL_METHOD" FromRole="L_SECU_ALL_METHODS" ToRole="L_SECU_SECTION_OPERATION_MAP" />
+        </EntityType>
+        <EntityType Name="L_SECU_SECTION_OPERATION_MAP">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Type="Int64" Name="PK_ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="OPERATION_NAME" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="FK_SCE_CONFIG_ID" Nullable="false" />
+          <Property Type="Int64" Name="FK_ACTION_ID" Nullable="false" />
+          <Property Type="Int16" Name="ROW_STATUS" Nullable="false" />
+          <Property Type="DateTime" Name="CREATION_DATE" Nullable="false" />
+          <Property Type="Int64" Name="FK_METHOD_ID" />
+          <NavigationProperty Name="L_SECU_ALL_METHODS" Relationship="Medappz2_LiveModel.FK_L_SECU_SECTION_OPERATION_MAP_L_SECU_ALL_METHOD" FromRole="L_SECU_SECTION_OPERATION_MAP" ToRole="L_SECU_ALL_METHODS" />
+          <NavigationProperty Name="L_SECU_CONFIG" Relationship="Medappz2_LiveModel.FK_SECTION_CONFIG_ID" FromRole="L_SECU_SECTION_OPERATION_MAP" ToRole="L_SECU_CONFIG" />
+          <NavigationProperty Name="L_SECU_MNU_OP_MAP" Relationship="Medappz2_LiveModel.FK_L_SECU_MNU_OP_MAP_L_SECU_SECTION_OPERATION_MAP" FromRole="L_SECU_SECTION_OPERATION_MAP" ToRole="L_SECU_MNU_OP_MAP" />
+          <NavigationProperty Name="l_SECU_MP_OPERATION_PERMISSION" Relationship="Medappz2_LiveModel.FK_l_SECU_MP_OPERATION_MP_PERMISSION" FromRole="L_SECU_SECTION_OPERATION_MAP" ToRole="l_SECU_MP_OPERATION_PERMISSION" />
+          <NavigationProperty Name="l_SECU_OPERATION_ACTION" Relationship="Medappz2_LiveModel.FK_L_ACTION_FK_MAP" FromRole="L_SECU_SECTION_OPERATION_MAP" ToRole="l_SECU_OPERATION_ACTION" />
+        </EntityType>
+        <Association Name="FK_L_SECU_METHOD_ARG_COMPARATOR_L_SECU_ALL_METHODS">
+          <End Type="Medappz2_LiveModel.L_SECU_ALL_METHODS" Role="L_SECU_ALL_METHODS" Multiplicity="1" />
+          <End Type="Medappz2_LiveModel.L_SECU_METHOD_ARG_COMPARATOR" Role="L_SECU_METHOD_ARG_COMPARATOR" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="L_SECU_ALL_METHODS">
+              <PropertyRef Name="PK_ID" />
+            </Principal>
+            <Dependent Role="L_SECU_METHOD_ARG_COMPARATOR">
+              <PropertyRef Name="FK_METHOD_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_L_SECU_SECTION_OPERATION_MAP_L_SECU_ALL_METHOD">
+          <End Type="Medappz2_LiveModel.L_SECU_ALL_METHODS" Role="L_SECU_ALL_METHODS" Multiplicity="0..1" />
+          <End Type="Medappz2_LiveModel.L_SECU_SECTION_OPERATION_MAP" Role="L_SECU_SECTION_OPERATION_MAP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="L_SECU_ALL_METHODS">
+              <PropertyRef Name="PK_ID" />
+            </Principal>
+            <Dependent Role="L_SECU_SECTION_OPERATION_MAP">
+              <PropertyRef Name="FK_METHOD_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SECTION_CONFIG_ID">
+          <End Type="Medappz2_LiveModel.L_SECU_CONFIG" Role="L_SECU_CONFIG" Multiplicity="1" />
+          <End Type="Medappz2_LiveModel.L_SECU_SECTION_OPERATION_MAP" Role="L_SECU_SECTION_OPERATION_MAP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="L_SECU_CONFIG">
+              <PropertyRef Name="PK_ID" />
+            </Principal>
+            <Dependent Role="L_SECU_SECTION_OPERATION_MAP">
+              <PropertyRef Name="FK_SCE_CONFIG_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_L_SECU_MNU_OP_MAP_L_SECU_SECTION_OPERATION_MAP">
+          <End Type="Medappz2_LiveModel.L_SECU_SECTION_OPERATION_MAP" Role="L_SECU_SECTION_OPERATION_MAP" Multiplicity="1" />
+          <End Type="Medappz2_LiveModel.L_SECU_MNU_OP_MAP" Role="L_SECU_MNU_OP_MAP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="L_SECU_SECTION_OPERATION_MAP">
+              <PropertyRef Name="PK_ID" />
+            </Principal>
+            <Dependent Role="L_SECU_MNU_OP_MAP">
+              <PropertyRef Name="FK_OPERATION_MAP_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_l_SECU_MP_OPERATION_MP_PERMISSION">
+          <End Type="Medappz2_LiveModel.L_SECU_SECTION_OPERATION_MAP" Role="L_SECU_SECTION_OPERATION_MAP" Multiplicity="1" />
+          <End Type="Medappz2_LiveModel.l_SECU_MP_OPERATION_PERMISSION" Role="l_SECU_MP_OPERATION_PERMISSION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="L_SECU_SECTION_OPERATION_MAP">
+              <PropertyRef Name="PK_ID" />
+            </Principal>
+            <Dependent Role="l_SECU_MP_OPERATION_PERMISSION">
+              <PropertyRef Name="FK_OPERATION_MAP_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_L_ACTION_FK_MAP">
+          <End Type="Medappz2_LiveModel.l_SECU_OPERATION_ACTION" Role="l_SECU_OPERATION_ACTION" Multiplicity="1" />
+          <End Type="Medappz2_LiveModel.L_SECU_SECTION_OPERATION_MAP" Role="L_SECU_SECTION_OPERATION_MAP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="l_SECU_OPERATION_ACTION">
+              <PropertyRef Name="PK_ID" />
+            </Principal>
+            <Dependent Role="L_SECU_SECTION_OPERATION_MAP">
+              <PropertyRef Name="FK_ACTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Medappz2_LiveModelStoreContainer" CdmEntityContainer="Medappz2_LiveEntities">
+          <EntitySetMapping Name="L_SECU_CONFIG"><EntityTypeMapping TypeName="Medappz2_LiveModel.L_SECU_CONFIG"><MappingFragment StoreEntitySet="L_SECU_CONFIG">
+            <ScalarProperty Name="PK_ID" ColumnName="PK_ID" />
+            <ScalarProperty Name="NAME" ColumnName="NAME" />
+            <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+            <ScalarProperty Name="REFERANCE" ColumnName="REFERANCE" />
+            <ScalarProperty Name="FK_PERMISSION_LEVEL_ID" ColumnName="FK_PERMISSION_LEVEL_ID" />
+            <ScalarProperty Name="FK_PK_PARENT_ID" ColumnName="FK_PK_PARENT_ID" />
+            <ScalarProperty Name="FK_SCE_CONFIG_TYPE" ColumnName="FK_SCE_CONFIG_TYPE" />
+            <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+            <ScalarProperty Name="CREATION_DATE" ColumnName="CREATION_DATE" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="L_SECU_CONFIG_TYPE"><EntityTypeMapping TypeName="Medappz2_LiveModel.L_SECU_CONFIG_TYPE"><MappingFragment StoreEntitySet="L_SECU_CONFIG_TYPE">
+            <ScalarProperty Name="PK_ID" ColumnName="PK_ID" />
+            <ScalarProperty Name="NAME" ColumnName="NAME" />
+            <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+            <ScalarProperty Name="CREATION_DATE" ColumnName="CREATION_DATE" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="l_SECU_MP_OPERATION_PERMISSION"><EntityTypeMapping TypeName="Medappz2_LiveModel.l_SECU_MP_OPERATION_PERMISSION"><MappingFragment StoreEntitySet="l_SECU_MP_OPERATION_PERMISSION">
+            <ScalarProperty Name="PK_ID" ColumnName="PK_ID" />
+            <ScalarProperty Name="FK_OPERATION_MAP_ID" ColumnName="FK_OPERATION_MAP_ID" />
+            <ScalarProperty Name="FK_USER_ID" ColumnName="FK_USER_ID" />
+            <ScalarProperty Name="IS_PERMITTED" ColumnName="IS_PERMITTED" />
+            <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+            <ScalarProperty Name="CREATION_DATE" ColumnName="CREATION_DATE" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="l_SECU_OPERATION_ACTION"><EntityTypeMapping TypeName="Medappz2_LiveModel.l_SECU_OPERATION_ACTION"><MappingFragment StoreEntitySet="l_SECU_OPERATION_ACTION">
+            <ScalarProperty Name="PK_ID" ColumnName="PK_ID" />
+            <ScalarProperty Name="ACTION_NAME" ColumnName="ACTION_NAME" />
+            <ScalarProperty Name="DESXRIPTION" ColumnName="DESXRIPTION" />
+            <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+            <ScalarProperty Name="CREATION_DATE" ColumnName="CREATION_DATE" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="L_SECU_PERMISSION_LEVEL"><EntityTypeMapping TypeName="Medappz2_LiveModel.L_SECU_PERMISSION_LEVEL"><MappingFragment StoreEntitySet="L_SECU_PERMISSION_LEVEL">
+            <ScalarProperty Name="PK_ID" ColumnName="PK_ID" />
+            <ScalarProperty Name="NAME" ColumnName="NAME" />
+            <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+            <ScalarProperty Name="CREATION_DATE" ColumnName="CREATION_DATE" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="L_V_UTILITY_MENU">
+            <EntityTypeMapping TypeName="Medappz2_LiveModel.L_V_UTILITY_MENU">
+              <MappingFragment StoreEntitySet="L_V_UTILITY_MENU">
+                <ScalarProperty Name="SCREEN_ID" ColumnName="SCREEN_ID" />
+                <ScalarProperty Name="FK_MODULE_NAME" ColumnName="FK_MODULE_NAME" />
+                <ScalarProperty Name="ORDER" ColumnName="ORDER" />
+                <ScalarProperty Name="HTML_ID" ColumnName="HTML_ID" />
+                <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+                <ScalarProperty Name="LEVEL" ColumnName="LEVEL" />
+                <ScalarProperty Name="FK_PARENT_MODULE_ID" ColumnName="FK_PARENT_MODULE_ID" />
+                <ScalarProperty Name="FK_PARENT_ID" ColumnName="FK_PARENT_ID" />
+                <ScalarProperty Name="MENU_NAME" ColumnName="MENU_NAME" />
+                <ScalarProperty Name="FK_MODULE_ID" ColumnName="FK_MODULE_ID" />
+                <ScalarProperty Name="PK_MENU_ID" ColumnName="PK_MENU_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="L_SECU_MNU_OP_MAP">
+            <EntityTypeMapping TypeName="Medappz2_LiveModel.L_SECU_MNU_OP_MAP">
+              <MappingFragment StoreEntitySet="L_SECU_MNU_OP_MAP">
+                <ScalarProperty Name="OPERATION_MODE" ColumnName="OPERATION_MODE" />
+                <ScalarProperty Name="REFERANCE" ColumnName="REFERANCE" />
+                <ScalarProperty Name="FK_OPERATION_MAP_ID" ColumnName="FK_OPERATION_MAP_ID" />
+                <ScalarProperty Name="PK_ID" ColumnName="PK_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="L_SECU_COMPARATOR_VALUE">
+            <EntityTypeMapping TypeName="Medappz2_LiveModel.L_SECU_COMPARATOR_VALUE">
+              <MappingFragment StoreEntitySet="L_SECU_COMPARATOR_VALUE">
+                <ScalarProperty Name="FK_MENU_MAP_ID" ColumnName="FK_MENU_MAP_ID" />
+                <ScalarProperty Name="PARAM_VALUE" ColumnName="PARAM_VALUE" />
+                <ScalarProperty Name="FK_COMPARATOR_ID" ColumnName="FK_COMPARATOR_ID" />
+                <ScalarProperty Name="PK_ID" ColumnName="PK_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="L_SECU_METHOD_ARG_COMPARATOR">
+            <EntityTypeMapping TypeName="Medappz2_LiveModel.L_SECU_METHOD_ARG_COMPARATOR">
+              <MappingFragment StoreEntitySet="L_SECU_METHOD_ARG_COMPARATOR">
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="PARAM_INDEX" ColumnName="PARAM_INDEX" />
+                <ScalarProperty Name="PARAM_KEY" ColumnName="PARAM_KEY" />
+                <ScalarProperty Name="FK_METHOD_ID" ColumnName="FK_METHOD_ID" />
+                <ScalarProperty Name="PK_ID" ColumnName="PK_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="L_SECU_ALL_METHODS">
+            <EntityTypeMapping TypeName="Medappz2_LiveModel.L_SECU_ALL_METHODS">
+              <MappingFragment StoreEntitySet="L_SECU_ALL_METHODS">
+                <ScalarProperty Name="CLASS_NAME" ColumnName="CLASS_NAME" />
+                <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+                <ScalarProperty Name="METHOD_NAME" ColumnName="METHOD_NAME" />
+                <ScalarProperty Name="PK_ID" ColumnName="PK_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="L_SECU_SECTION_OPERATION_MAP">
+            <EntityTypeMapping TypeName="Medappz2_LiveModel.L_SECU_SECTION_OPERATION_MAP">
+              <MappingFragment StoreEntitySet="L_SECU_SECTION_OPERATION_MAP">
+                <ScalarProperty Name="FK_METHOD_ID" ColumnName="FK_METHOD_ID" />
+                <ScalarProperty Name="CREATION_DATE" ColumnName="CREATION_DATE" />
+                <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+                <ScalarProperty Name="FK_ACTION_ID" ColumnName="FK_ACTION_ID" />
+                <ScalarProperty Name="FK_SCE_CONFIG_ID" ColumnName="FK_SCE_CONFIG_ID" />
+                <ScalarProperty Name="OPERATION_NAME" ColumnName="OPERATION_NAME" />
+                <ScalarProperty Name="PK_ID" ColumnName="PK_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="EFSecurity">
+        <EntityTypeShape EntityType="Medappz2_LiveModel.L_SECU_CONFIG" Width="1.5" PointX="3" PointY="1" Height="3.3263964843749996" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medappz2_LiveModel.L_SECU_CONFIG_TYPE" Width="1.5" PointX="0.75" PointY="1.625" Height="1.9802864583333335" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medappz2_LiveModel.l_SECU_MP_OPERATION_PERMISSION" Width="1.5" PointX="7.5" PointY="1.5" Height="2.3648893229166656" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medappz2_LiveModel.l_SECU_OPERATION_ACTION" Width="1.5" PointX="3" PointY="5.625" Height="2.1725878906249996" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medappz2_LiveModel.L_SECU_PERMISSION_LEVEL" Width="1.5" PointX="0.75" PointY="5.625" Height="1.9802864583333335" IsExpanded="true" />
+        <AssociationConnector Association="Medappz2_LiveModel.FK_L_SECU_CONFIG_L_SECU_CONFIG" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="2.424402495117187" />
+          <ConnectorPoint PointX="3" PointY="2.424402495117187" />
+        </AssociationConnector>
+        <AssociationConnector Association="Medappz2_LiveModel.FK_L_SECU_CONFIG_L_SECU_PERMISSION_LEVEL" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="5.625" />
+          <ConnectorPoint PointX="2.625" PointY="5.25" />
+          <ConnectorPoint PointX="2.625" PointY="3.4066514897460931" />
+          <ConnectorPoint PointX="3" PointY="3.4066514897460931" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="Medappz2_LiveModel.L_V_UTILITY_MENU" Width="1.5" PointX="5.375" PointY="7.75" Height="3.1340950520833317" />
+        <EntityTypeShape EntityType="Medappz2_LiveModel.L_SECU_MNU_OP_MAP" Width="1.5" PointX="7.375" PointY="7.75" Height="1.7879850260416674" />
+        <AssociationConnector Association="Medappz2_LiveModel.L_V_UTILITY_MENU_FK_PARENT_ID" >
+          <ConnectorPoint PointX="5.9069230769230767" PointY="11.268697916666666" />
+          <ConnectorPoint PointX="5.9069230769230767" PointY="11.518697916666667" />
+          <ConnectorPoint PointX="6.3534615384615378" PointY="11.518697916666667" />
+          <ConnectorPoint PointX="6.3534615384615378" PointY="11.268697916666666" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="Medappz2_LiveModel.L_SECU_COMPARATOR_VALUE" Width="1.5" PointX="9.75" PointY="10.375" Height="2.172587890624996" />
+        <AssociationConnector Association="Medappz2_LiveModel.FK_L_SECU_COMPARATOR_VALUE_L_SECU_MNU_OP_MAP" >
+          <ConnectorPoint PointX="8.875" PointY="8.8362939453125" />
+          <ConnectorPoint PointX="8.8854166666666661" PointY="8.8362939453125" />
+          <ConnectorPoint PointX="9.0520833333333339" PointY="8.8362939453125" />
+          <ConnectorPoint PointX="10.5" PointY="8.8362939453125" />
+          <ConnectorPoint PointX="10.5" PointY="10.375" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="Medappz2_LiveModel.L_SECU_METHOD_ARG_COMPARATOR" Width="1.5" PointX="8.125" PointY="13.625" Height="2.3648893229166674" />
+        <AssociationConnector Association="Medappz2_LiveModel.FK_L_SECU_COMPARATOR_L_SECU_MENU_MAP_COMPARATOR" >
+          <ConnectorPoint PointX="8.875" PointY="13.625" />
+          <ConnectorPoint PointX="8.875" PointY="11.4612939453125" />
+          <ConnectorPoint PointX="8.8854166666666661" PointY="11.4612939453125" />
+          <ConnectorPoint PointX="9.0520833333333339" PointY="11.4612939453125" />
+          <ConnectorPoint PointX="9.75" PointY="11.4612939453125" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="Medappz2_LiveModel.L_SECU_ALL_METHODS" Width="1.5" PointX="0.875" PointY="11.375" Height="2.172587890624996" />
+        <EntityTypeShape EntityType="Medappz2_LiveModel.L_SECU_SECTION_OPERATION_MAP" Width="1.5" PointX="3.125" PointY="9" Height="3.326396484374996" />
+        <AssociationConnector Association="Medappz2_LiveModel.FK_L_SECU_METHOD_ARG_COMPARATOR_L_SECU_ALL_METHODS" >
+          <ConnectorPoint PointX="2.375" PointY="12.968242187499996" />
+          <ConnectorPoint PointX="8.4687475" PointY="12.968242187499996" />
+          <ConnectorPoint PointX="8.4687475" PointY="13.625" />
+        </AssociationConnector>
+        <AssociationConnector Association="Medappz2_LiveModel.FK_L_SECU_SECTION_OPERATION_MAP_L_SECU_ALL_METHOD" >
+          <ConnectorPoint PointX="2.375" PointY="11.850698242187498" />
+          <ConnectorPoint PointX="3.125" PointY="11.850698242187498" />
+        </AssociationConnector>
+        <AssociationConnector Association="Medappz2_LiveModel.FK_SECTION_CONFIG_ID" >
+          <ConnectorPoint PointX="4.5" PointY="4.326396484375" />
+          <ConnectorPoint PointX="4.875" PointY="4.701396484375" />
+          <ConnectorPoint PointX="4.875" PointY="8.625" />
+          <ConnectorPoint PointX="5.0011528461538468" PointY="8.625" />
+          <ConnectorPoint PointX="4.625" PointY="9.0011528461538468" />
+        </AssociationConnector>
+        <AssociationConnector Association="Medappz2_LiveModel.FK_L_SECU_MNU_OP_MAP_L_SECU_SECTION_OPERATION_MAP" >
+          <ConnectorPoint PointX="4.625" PointY="11.922547200520832" />
+          <ConnectorPoint PointX="8.125" PointY="11.922547200520832" />
+          <ConnectorPoint PointX="8.125" PointY="9.922587890625" />
+        </AssociationConnector>
+        <AssociationConnector Association="Medappz2_LiveModel.FK_l_SECU_MP_OPERATION_MP_PERMISSION" >
+          <ConnectorPoint PointX="4.625" PointY="11.689370058593756" />
+          <ConnectorPoint PointX="8.0416666666666661" PointY="11.689370058593756" />
+          <ConnectorPoint PointX="8.2083333333333339" PointY="11.689370058593756" />
+          <ConnectorPoint PointX="8.7916666666666661" PointY="11.689370058593756" />
+          <ConnectorPoint PointX="8.9583333333333339" PointY="11.689370058593756" />
+          <ConnectorPoint PointX="8.96875" PointY="11.689370058593756" />
+          <ConnectorPoint PointX="8.96875" PointY="3.864889322916667" />
+        </AssociationConnector>
+        <AssociationConnector Association="Medappz2_LiveModel.FK_L_ACTION_FK_MAP" >
+          <ConnectorPoint PointX="3.8125" PointY="7.797587890625" />
+          <ConnectorPoint PointX="3.8125" PointY="9" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
