@@ -16,7 +16,10 @@ namespace XSS
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            Session["Details"] = txtDetails.Text;
+            Session["textValue"] = txtDetails.Text;
+            Response.Redirect("DisplayDetails.aspx");
+            //Response.Headers.Set("X-XSS-Protection", "none");
+            //Response.Write(txtDetails.Text);
         }
     }
 }

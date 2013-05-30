@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SubmitDetais.aspx.cs" Inherits="XSS.SubmitDetais" ValidateRequest="false"   %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SubmitDetais.aspx.cs" Inherits="XSS.SubmitDetais"  ValidateRequest="false"   %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -9,9 +9,10 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:TextBox ID="txtDetails" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtDetails" runat="server" TextMode="MultiLine" Height="77px" 
+            Width="445px"></asp:TextBox>
         <asp:Button ID="btnSubmit"
-            runat="server" Text="Submit" onclick="btnSubmit_Click" />
+            runat="server" Text="Post" onclick="btnSubmit_Click"  />
     </div>
     </form>
 </body>

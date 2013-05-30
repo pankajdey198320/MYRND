@@ -3,3 +3,8 @@ D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\EvilSite\bin\EvilSite.pdb
 D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\EvilSite\obj\Debug\ResolveAssemblyReference.cache
 D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\EvilSite\obj\Debug\EvilSite.dll
 D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\EvilSite\obj\Debug\EvilSite.pdb
+F:\Backup\MyProjects\MYRND\EvilSite\bin\EvilSite.dll
+F:\Backup\MyProjects\MYRND\EvilSite\bin\EvilSite.pdb
+F:\Backup\MyProjects\MYRND\EvilSite\obj\Debug\ResolveAssemblyReference.cache
+F:\Backup\MyProjects\MYRND\EvilSite\obj\Debug\EvilSite.dll
+F:\Backup\MyProjects\MYRND\EvilSite\obj\Debug\EvilSite.pdb
