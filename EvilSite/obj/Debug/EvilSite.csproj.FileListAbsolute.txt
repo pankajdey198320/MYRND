@@ -1,0 +1,5 @@
+D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\EvilSite\bin\EvilSite.dll
+D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\EvilSite\bin\EvilSite.pdb
+D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\EvilSite\obj\Debug\ResolveAssemblyReference.cache
+D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\EvilSite\obj\Debug\EvilSite.dll
+D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\EvilSite\obj\Debug\EvilSite.pdb

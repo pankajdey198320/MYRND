@@ -1,0 +1,5 @@
+F:\Backup\MyProjects\MYRND\SecurityDemo\XSS\XSS\bin\XSS.dll
+F:\Backup\MyProjects\MYRND\SecurityDemo\XSS\XSS\bin\XSS.pdb
+F:\Backup\MyProjects\MYRND\SecurityDemo\XSS\XSS\obj\Debug\ResolveAssemblyReference.cache
+F:\Backup\MyProjects\MYRND\SecurityDemo\XSS\XSS\obj\Debug\XSS.dll
+F:\Backup\MyProjects\MYRND\SecurityDemo\XSS\XSS\obj\Debug\XSS.pdb

@@ -1,0 +1,5 @@
+D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\CSRF\bin\CSRF.dll
+D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\CSRF\bin\CSRF.pdb
+D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\CSRF\obj\Debug\ResolveAssemblyReference.cache
+D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\CSRF\obj\Debug\CSRF.dll
+D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\CSRF\obj\Debug\CSRF.pdb
