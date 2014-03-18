@@ -1,0 +1,5 @@
+D:\PROJECTS\Tests\R_N_D\DeFault Windows Service\DeFault Windows Service\bin\Debug\DeFault Windows Service.exe
+D:\PROJECTS\Tests\R_N_D\DeFault Windows Service\DeFault Windows Service\bin\Debug\DeFault Windows Service.pdb
+D:\PROJECTS\Tests\R_N_D\DeFault Windows Service\DeFault Windows Service\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\PROJECTS\Tests\R_N_D\DeFault Windows Service\DeFault Windows Service\obj\x86\Debug\DeFault Windows Service.exe
+D:\PROJECTS\Tests\R_N_D\DeFault Windows Service\DeFault Windows Service\obj\x86\Debug\DeFault Windows Service.pdb

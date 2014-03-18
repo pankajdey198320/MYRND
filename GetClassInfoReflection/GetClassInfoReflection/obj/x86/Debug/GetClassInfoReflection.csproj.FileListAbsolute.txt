@@ -1,0 +1,5 @@
+D:\PROJECTS\Tests\R_N_D\GetClassInfoReflection\GetClassInfoReflection\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\PROJECTS\Tests\R_N_D\GetClassInfoReflection\GetClassInfoReflection\bin\Debug\GetClassInfoReflection.exe
+D:\PROJECTS\Tests\R_N_D\GetClassInfoReflection\GetClassInfoReflection\bin\Debug\GetClassInfoReflection.pdb
+D:\PROJECTS\Tests\R_N_D\GetClassInfoReflection\GetClassInfoReflection\obj\x86\Debug\GetClassInfoReflection.exe
+D:\PROJECTS\Tests\R_N_D\GetClassInfoReflection\GetClassInfoReflection\obj\x86\Debug\GetClassInfoReflection.pdb

@@ -1,0 +1,5 @@
+D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\CORS\bin\CORS.dll
+D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\CORS\bin\CORS.pdb
+D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\CORS\obj\Debug\ResolveAssemblyReference.cache
+D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\CORS\obj\Debug\CORS.dll
+D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\CORS\obj\Debug\CORS.pdb

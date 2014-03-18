@@ -1,0 +1,10 @@
+D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\TetsApp\bin\TetsApp.dll
+D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\TetsApp\bin\TetsApp.pdb
+D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\TetsApp\obj\Debug\ResolveAssemblyReference.cache
+D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\TetsApp\obj\Debug\TetsApp.dll
+D:\PROJECTS\VIC_Doc\Tests\R_N_D\Security\TetsApp\TetsApp\obj\Debug\TetsApp.pdb
+F:\Backup\VIC_Doc\Tests\R_N_D\Security\TetsApp\TetsApp\bin\TetsApp.dll
+F:\Backup\VIC_Doc\Tests\R_N_D\Security\TetsApp\TetsApp\bin\TetsApp.pdb
+F:\Backup\VIC_Doc\Tests\R_N_D\Security\TetsApp\TetsApp\obj\Debug\ResolveAssemblyReference.cache
+F:\Backup\VIC_Doc\Tests\R_N_D\Security\TetsApp\TetsApp\obj\Debug\TetsApp.dll
+F:\Backup\VIC_Doc\Tests\R_N_D\Security\TetsApp\TetsApp\obj\Debug\TetsApp.pdb
