@@ -1,0 +1,6 @@
+Z:\MyProjects\MYRND\CodeTests\CodetTests\DelegateTest\bin\Debug\DelegateTest.exe.config
+Z:\MyProjects\MYRND\CodeTests\CodetTests\DelegateTest\bin\Debug\DelegateTest.exe
+Z:\MyProjects\MYRND\CodeTests\CodetTests\DelegateTest\bin\Debug\DelegateTest.pdb
+Z:\MyProjects\MYRND\CodeTests\CodetTests\DelegateTest\obj\Debug\DelegateTest.csprojResolveAssemblyReference.cache
+Z:\MyProjects\MYRND\CodeTests\CodetTests\DelegateTest\obj\Debug\DelegateTest.exe
+Z:\MyProjects\MYRND\CodeTests\CodetTests\DelegateTest\obj\Debug\DelegateTest.pdb
