@@ -15,7 +15,7 @@ namespace DelegateTest
         public int id;
         public int GetLength(string value)
         {
-            return value.Length;
+            return id;
         }
 
         internal void DoingTheAction(string value,Action afterWork) {
