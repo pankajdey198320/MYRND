@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
-using System.Threading.Tasks;
 using Component.Implementation;
+using Component.Interface;
+using Component.MessageContext;
 
 namespace ComPoint.ComImplementation.Tcp
 {
@@ -14,16 +14,24 @@ namespace ComPoint.ComImplementation.Tcp
       
         class TcpClientStateObject
         {
-            public byte[] buffer;
-            public TcpClient Client;
+            internal byte[] buffer;
+            internal TcpClient Client;
+            internal IMessageContext Context;
             public TcpClientStateObject(Byte[] buffer, TcpClient client)
             {
                 this.buffer = buffer; this.Client = client;
             }
+            public TcpClientStateObject(Byte[] buffer, TcpClient client,IMessageContext context)
+                :this(buffer,client)
+            {
+                this.Context = context;
+            }
         }
-        public override void SartComponent(Component.Interface.IMessageContext context)
+
+        public override void SartComponent(IMessageContext  obj)
         {
-            this.MesageContext = context;
+            base.SartComponent(obj);
+            
             this._server.Start();
             this._server.BeginAcceptTcpClient(new AsyncCallback(ReceivedClient), this._server);
 
@@ -57,7 +65,7 @@ namespace ComPoint.ComImplementation.Tcp
             NetworkStream networkStream = client.GetStream();
 
             byte[] buffer = new byte[client.ReceiveBufferSize];
-            client.Client.BeginReceive(buffer, 0, buffer.Length, SocketFlags.Partial, ReadCallBack, new TcpClientStateObject(buffer, client));
+            client.Client.BeginReceive(buffer, 0, buffer.Length, SocketFlags.Partial, ReadCallBack, new TcpClientStateObject(buffer, client, new BaseMessageContext()));
 
             obj.BeginAcceptTcpClient(ReceivedClient, obj);
         }
@@ -70,14 +78,22 @@ namespace ComPoint.ComImplementation.Tcp
                 try
                 {
                     var buffr = state.buffer.Where(p => p != 0).ToArray();
+
+
                     // NetworkStream networkStream = state.Client.GetStream();
                     string data = Encoding.UTF8.GetString(buffr, 0, buffr.Length);
-                    Console.WriteLine(data);
-                    this.MesageContext.Message += data;
-
+                    //Console.WriteLine(data);
+                    state.Context.Message += data;
+                    if (data.Contains(this.EndChar))
+                    {
+                        base.InvokeNextComponent(state.Context);
+                        state.Client.Close();
+                        return;
+                    }
                     byte[] buffer = new byte[state.Client.ReceiveBufferSize];
-                    base.InvokeNextComponent();
-                    state.Client.Client.BeginReceive(buffer, 0, buffer.Length, SocketFlags.Partial, ReadCallBack, new TcpClientStateObject(buffer, state.Client));
+                    state.buffer = buffer;
+                   
+                    state.Client.Client.BeginReceive(buffer, 0, buffer.Length, SocketFlags.Partial, ReadCallBack, state);
                     //networkStream.BeginRead(buffer, 0, buffer.Length, ReadCallBack, new TcpClientStateObject(buffer, state.Client));
                 }
                 catch (Exception ex)
