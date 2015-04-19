@@ -1,0 +1,12 @@
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\ConsoleTest.exe.config
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\ConsoleTest.exe
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\ConsoleTest.pdb
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\ComPoint.dll
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\Component.dll
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\Service.dll
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\ComPoint.pdb
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\Component.pdb
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\Service.pdb
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\ConsoleTest\obj\Debug\ConsoleTest.csprojResolveAssemblyReference.cache
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\ConsoleTest\obj\Debug\ConsoleTest.exe
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\ConsoleTest\obj\Debug\ConsoleTest.pdb

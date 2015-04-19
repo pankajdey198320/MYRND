@@ -1,0 +1,7 @@
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\ComPoint\bin\Debug\ComPoint.dll
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\ComPoint\bin\Debug\ComPoint.pdb
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\ComPoint\bin\Debug\Component.dll
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\ComPoint\bin\Debug\Component.pdb
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\ComPoint\obj\Debug\ComPoint.csprojResolveAssemblyReference.cache
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\ComPoint\obj\Debug\ComPoint.dll
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\ComPoint\obj\Debug\ComPoint.pdb

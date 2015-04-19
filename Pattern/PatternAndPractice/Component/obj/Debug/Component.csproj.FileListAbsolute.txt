@@ -1,0 +1,4 @@
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\Component\bin\Debug\Component.dll
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\Component\bin\Debug\Component.pdb
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\Component\obj\Debug\Component.dll
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\Component\obj\Debug\Component.pdb

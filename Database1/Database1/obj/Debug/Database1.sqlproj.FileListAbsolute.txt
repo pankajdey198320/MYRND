@@ -1,0 +1,9 @@
+Z:\MyProjects\MYRND\Database1\Database1\bin\Debug\Database1.dacpac
+Z:\MyProjects\MYRND\Database1\Database1\bin\Debug\Database1.dll
+Z:\MyProjects\MYRND\Database1\Database1\bin\Debug\Database1.pdb
+Z:\MyProjects\MYRND\Database1\Database1\obj\Debug\Model.xml
+Z:\MyProjects\MYRND\Database1\Database1\obj\Debug\refactor.xml
+Z:\MyProjects\MYRND\Database1\Database1\obj\Debug\postdeploy.sql
+Z:\MyProjects\MYRND\Database1\Database1\obj\Debug\predeploy.sql
+Z:\MyProjects\MYRND\Database1\Database1\obj\Debug\Database1.dll
+Z:\MyProjects\MYRND\Database1\Database1\obj\Debug\Database1.pdb

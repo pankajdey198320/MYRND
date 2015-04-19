@@ -1,0 +1,9 @@
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\Service\bin\Debug\Service.dll
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\Service\bin\Debug\Service.pdb
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\Service\bin\Debug\ComPoint.dll
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\Service\bin\Debug\Component.dll
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\Service\bin\Debug\ComPoint.pdb
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\Service\bin\Debug\Component.pdb
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\Service\obj\Debug\Service.dll
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\Service\obj\Debug\Service.pdb

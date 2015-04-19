@@ -1,0 +1,5 @@
+Z:\MyProjects\MYRND\CodeTests\CodetTests\CoContra_variance\bin\Debug\CoContra_variance.exe.config
+Z:\MyProjects\MYRND\CodeTests\CodetTests\CoContra_variance\bin\Debug\CoContra_variance.exe
+Z:\MyProjects\MYRND\CodeTests\CodetTests\CoContra_variance\bin\Debug\CoContra_variance.pdb
+Z:\MyProjects\MYRND\CodeTests\CodetTests\CoContra_variance\obj\Debug\CoContra_variance.exe
+Z:\MyProjects\MYRND\CodeTests\CodetTests\CoContra_variance\obj\Debug\CoContra_variance.pdb
