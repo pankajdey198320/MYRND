@@ -19,6 +19,11 @@ namespace CoContra_variance
             IPersonService<Person> service = sP; 
             var result = service.GetFirst();
             Console.WriteLine(result.Name);
+
+            var x = new ZService<Person>();
+            x.Add(new Person() { Name = "pankaj" });
+            IContraService<Student> xS = x;
+            xS.Add(new Student() {  Address="asda", Name="dasdas" });
         }
     }
 }
