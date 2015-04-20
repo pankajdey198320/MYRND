@@ -24,6 +24,14 @@ namespace CoContra_variance
             x.Add(new Person() { Name = "pankaj" });
             IContraService<Student> xS = x;
             xS.Add(new Student() {  Address="asda", Name="dasdas" });
+
+            Repository<Person> _pRepo = new Repository<Person>();
+            _pRepo.Add(new Student() { ID = 1, Address = "banipur", Name = "pankaj", RoleNo = 120 });
+            _pRepo.Add(new Student() { ID = 1, Address = "c", Name = "Rh", RoleNo = 20 });
+            _pRepo.Add(new Student() { ID = 1, Address = "a", Name = "Ah", RoleNo = 21 });
+            _pRepo.Add(new Student() { ID = 1, Address = "b", Name = "BH", RoleNo = 202});
+
+            var rep= _pRepo.Get(p => p.Address == "a").FirstOrDefault();
         }
     }
 }
