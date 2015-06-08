@@ -1,0 +1,5 @@
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\AbstructOrInterface\bin\Debug\AbstructOrInterface.exe.config
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\AbstructOrInterface\bin\Debug\AbstructOrInterface.exe
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\AbstructOrInterface\bin\Debug\AbstructOrInterface.pdb
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\AbstructOrInterface\obj\Debug\AbstructOrInterface.exe
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\AbstructOrInterface\obj\Debug\AbstructOrInterface.pdb

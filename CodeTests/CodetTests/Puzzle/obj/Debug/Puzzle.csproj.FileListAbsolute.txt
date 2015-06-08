@@ -1,0 +1,6 @@
+Z:\MyProjects\MYRND\CodeTests\CodetTests\Puzzle\bin\Debug\Puzzle.exe.config
+Z:\MyProjects\MYRND\CodeTests\CodetTests\Puzzle\bin\Debug\Puzzle.exe
+Z:\MyProjects\MYRND\CodeTests\CodetTests\Puzzle\bin\Debug\Puzzle.pdb
+Z:\MyProjects\MYRND\CodeTests\CodetTests\Puzzle\obj\Debug\Puzzle.csprojResolveAssemblyReference.cache
+Z:\MyProjects\MYRND\CodeTests\CodetTests\Puzzle\obj\Debug\Puzzle.exe
+Z:\MyProjects\MYRND\CodeTests\CodetTests\Puzzle\obj\Debug\Puzzle.pdb

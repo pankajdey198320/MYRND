@@ -1,7 +1,7 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(MiniProfilerTest.Startup))]
+//[assembly: OwinStartupAttribute(typeof(MiniProfilerTest.Startup))]
 namespace MiniProfilerTest
 {
     public partial class Startup

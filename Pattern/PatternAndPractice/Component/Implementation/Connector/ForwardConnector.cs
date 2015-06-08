@@ -33,7 +33,7 @@ namespace Component.Implementation
 
         public void AddConditionLogic(string leftOperator, string rightOperator, Operator operat)
         {
-            this.ConnectLogic.Add(new Condition() { LeftOperant = leftOperator,RightOperant = rightOperator, Operate = operat });
+            //this.ConnectLogic.Add(new Condition() { LeftOperant = leftOperator,RightOperant = rightOperator, Operate = operat });
         }
     }
 }

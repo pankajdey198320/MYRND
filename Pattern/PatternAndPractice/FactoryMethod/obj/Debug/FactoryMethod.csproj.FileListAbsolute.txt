@@ -1,0 +1,6 @@
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\FactoryMethod\bin\Debug\FactoryMethod.exe.config
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\FactoryMethod\bin\Debug\FactoryMethod.exe
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\FactoryMethod\bin\Debug\FactoryMethod.pdb
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\FactoryMethod\obj\Debug\FactoryMethod.csprojResolveAssemblyReference.cache
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\FactoryMethod\obj\Debug\FactoryMethod.exe
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\FactoryMethod\obj\Debug\FactoryMethod.pdb

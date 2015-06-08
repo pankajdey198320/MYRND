@@ -1,0 +1,6 @@
+Z:\MyProjects\MYRND\CodeTests\CodetTests\LoadAssambly\bin\Debug\LoadAssambly.exe.config
+Z:\MyProjects\MYRND\CodeTests\CodetTests\LoadAssambly\bin\Debug\LoadAssambly.exe
+Z:\MyProjects\MYRND\CodeTests\CodetTests\LoadAssambly\bin\Debug\LoadAssambly.pdb
+Z:\MyProjects\MYRND\CodeTests\CodetTests\LoadAssambly\obj\Debug\LoadAssambly.exe
+Z:\MyProjects\MYRND\CodeTests\CodetTests\LoadAssambly\obj\Debug\LoadAssambly.pdb
+Z:\MyProjects\MYRND\CodeTests\CodetTests\LoadAssambly\obj\Debug\LoadAssambly.csprojResolveAssemblyReference.cache

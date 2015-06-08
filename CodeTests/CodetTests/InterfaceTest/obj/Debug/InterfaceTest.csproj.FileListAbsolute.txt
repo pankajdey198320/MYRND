@@ -1,0 +1,6 @@
+Z:\MyProjects\MYRND\CodeTests\CodetTests\InterfaceTest\bin\Debug\InterfaceTest.exe.config
+Z:\MyProjects\MYRND\CodeTests\CodetTests\InterfaceTest\bin\Debug\InterfaceTest.exe
+Z:\MyProjects\MYRND\CodeTests\CodetTests\InterfaceTest\bin\Debug\InterfaceTest.pdb
+Z:\MyProjects\MYRND\CodeTests\CodetTests\InterfaceTest\obj\Debug\InterfaceTest.csprojResolveAssemblyReference.cache
+Z:\MyProjects\MYRND\CodeTests\CodetTests\InterfaceTest\obj\Debug\InterfaceTest.exe
+Z:\MyProjects\MYRND\CodeTests\CodetTests\InterfaceTest\obj\Debug\InterfaceTest.pdb

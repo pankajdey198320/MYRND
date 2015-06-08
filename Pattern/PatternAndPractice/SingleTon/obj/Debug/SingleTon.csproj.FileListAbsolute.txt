@@ -1,0 +1,6 @@
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\SingleTon\bin\Debug\SingleTon.exe.config
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\SingleTon\bin\Debug\SingleTon.exe
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\SingleTon\bin\Debug\SingleTon.pdb
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\SingleTon\obj\Debug\SingleTon.csprojResolveAssemblyReference.cache
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\SingleTon\obj\Debug\SingleTon.exe
+Z:\MyProjects\MYRND\Pattern\PatternAndPractice\SingleTon\obj\Debug\SingleTon.pdb

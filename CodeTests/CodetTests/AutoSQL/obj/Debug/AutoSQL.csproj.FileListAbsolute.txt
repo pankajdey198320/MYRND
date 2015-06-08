@@ -1,0 +1,7 @@
+Z:\MyProjects\MYRND\CodeTests\CodetTests\AutoSQL\bin\Debug\AutoSQL.exe.config
+Z:\MyProjects\MYRND\CodeTests\CodetTests\AutoSQL\bin\Debug\AutoSQL.exe
+Z:\MyProjects\MYRND\CodeTests\CodetTests\AutoSQL\bin\Debug\AutoSQL.pdb
+Z:\MyProjects\MYRND\CodeTests\CodetTests\AutoSQL\bin\Debug\Microsoft.SqlServer.SQLTask.dll
+Z:\MyProjects\MYRND\CodeTests\CodetTests\AutoSQL\obj\Debug\AutoSQL.csprojResolveAssemblyReference.cache
+Z:\MyProjects\MYRND\CodeTests\CodetTests\AutoSQL\obj\Debug\AutoSQL.exe
+Z:\MyProjects\MYRND\CodeTests\CodetTests\AutoSQL\obj\Debug\AutoSQL.pdb

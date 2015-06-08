@@ -11,7 +11,8 @@ namespace DelegateTest
         static void Main(string[] args)
         {
             MyCustom v = new MyCustom(10);
-            Func<string, int> myDele = v.GetLength;
+            Func<string, int> myDele = (a) => { return Convert.ToInt32(a); };// v.GetLength;
+            
             Console.WriteLine(myDele("pankaj"));
             Action<string, Action> myAction = v.DoingTheAction;
             myAction.BeginInvoke("Hey buddy", () =>

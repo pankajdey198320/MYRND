@@ -3,3 +3,4 @@ Z:\MyProjects\MYRND\CodeTests\CodetTests\CoContra_variance\bin\Debug\CoContra_va
 Z:\MyProjects\MYRND\CodeTests\CodetTests\CoContra_variance\bin\Debug\CoContra_variance.pdb
 Z:\MyProjects\MYRND\CodeTests\CodetTests\CoContra_variance\obj\Debug\CoContra_variance.exe
 Z:\MyProjects\MYRND\CodeTests\CodetTests\CoContra_variance\obj\Debug\CoContra_variance.pdb
+Z:\MyProjects\MYRND\CodeTests\CodetTests\CoContra_variance\obj\Debug\CoContra_variance.csprojResolveAssemblyReference.cache
