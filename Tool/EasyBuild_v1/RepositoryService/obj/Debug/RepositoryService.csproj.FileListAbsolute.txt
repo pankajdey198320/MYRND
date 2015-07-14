@@ -1,0 +1,15 @@
+Z:\Tool\EasyBuild_v1\RepositoryService\bin\Debug\RepositoryService.dll
+Z:\Tool\EasyBuild_v1\RepositoryService\bin\Debug\RepositoryService.pdb
+Z:\Tool\EasyBuild_v1\RepositoryService\obj\Debug\RepositoryService.csprojResolveAssemblyReference.cache
+Z:\Tool\EasyBuild_v1\RepositoryService\obj\Debug\RepositoryService.dll
+Z:\Tool\EasyBuild_v1\RepositoryService\obj\Debug\RepositoryService.pdb
+Z:\Tool\EasyBuild_v1\RepositoryService\bin\Debug\Integration.Infrastructure.dll
+Z:\Tool\EasyBuild_v1\RepositoryService\bin\Debug\NGit.dll
+Z:\Tool\EasyBuild_v1\RepositoryService\bin\Debug\Sharpen.dll
+Z:\Tool\EasyBuild_v1\RepositoryService\bin\Debug\ICSharpCode.SharpZipLib.dll
+Z:\Tool\EasyBuild_v1\RepositoryService\bin\Debug\NSch.dll
+Z:\Tool\EasyBuild_v1\RepositoryService\bin\Debug\Mono.Security.dll
+Z:\Tool\EasyBuild_v1\RepositoryService\bin\Debug\NGit.pdb
+Z:\Tool\EasyBuild_v1\RepositoryService\bin\Debug\Sharpen.pdb
+Z:\Tool\EasyBuild_v1\RepositoryService\bin\Debug\Integration.Infrastructure.pdb
+Z:\Tool\EasyBuild_v1\RepositoryService\bin\Debug\NSch.pdb

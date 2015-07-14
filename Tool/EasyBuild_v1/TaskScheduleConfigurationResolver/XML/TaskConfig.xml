@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Schedules>
+  <TaskScheduleEntry>
+    <Task module="BaseBuildTask" assamblyPath =".\\BuildTask.dll"></Task>
+    <TaskSchedule >
+      <StartDate>201503190628</StartDate>
+      <NextIteration>201503201353</NextIteration>
+      <Interval>10000</Interval>
+    </TaskSchedule>
+  </TaskScheduleEntry>
+  <TaskScheduleEntry>
+    <Task module="ConsoleLogTask" assamblyPath =".\\BuildTask.dll"></Task>
+    <TaskSchedule >
+      <StartDate>201503190628</StartDate>
+      <NextIteration>201503201342</NextIteration>
+      <Interval>10000</Interval>
+    </TaskSchedule>
+  </TaskScheduleEntry>
+</Schedules>
+

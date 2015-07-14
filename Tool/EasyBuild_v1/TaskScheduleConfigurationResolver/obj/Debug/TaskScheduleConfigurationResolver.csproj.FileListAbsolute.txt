@@ -1,0 +1,11 @@
+Z:\Tool\EasyBuild_v1\TaskScheduleConfigurationResolver\bin\Debug\TaskScheduleConfigurationResolver.dll
+Z:\Tool\EasyBuild_v1\TaskScheduleConfigurationResolver\bin\Debug\TaskScheduleConfigurationResolver.pdb
+Z:\Tool\EasyBuild_v1\TaskScheduleConfigurationResolver\bin\Debug\BuildTask.dll
+Z:\Tool\EasyBuild_v1\TaskScheduleConfigurationResolver\bin\Debug\Infrastructure.dll
+Z:\Tool\EasyBuild_v1\TaskScheduleConfigurationResolver\bin\Debug\BuildTask.pdb
+Z:\Tool\EasyBuild_v1\TaskScheduleConfigurationResolver\bin\Debug\Infrastructure.pdb
+Z:\Tool\EasyBuild_v1\TaskScheduleConfigurationResolver\obj\Debug\TaskScheduleConfigurationResolver.csprojResolveAssemblyReference.cache
+Z:\Tool\EasyBuild_v1\TaskScheduleConfigurationResolver\obj\Debug\TaskScheduleConfigurationResolver.dll
+Z:\Tool\EasyBuild_v1\TaskScheduleConfigurationResolver\obj\Debug\TaskScheduleConfigurationResolver.pdb
+Z:\Tool\EasyBuild_v1\TaskScheduleConfigurationResolver\bin\Debug\Integration.Infrastructure.dll
+Z:\Tool\EasyBuild_v1\TaskScheduleConfigurationResolver\bin\Debug\Integration.Infrastructure.pdb

@@ -1,0 +1,10 @@
+Z:\MyProjects\MYRND\IOT\AzureEventHubCommunication\AzureEventHubCommunication\bin\Debug\AzureEventHubCommunication.exe.config
+Z:\MyProjects\MYRND\IOT\AzureEventHubCommunication\AzureEventHubCommunication\bin\Debug\AzureEventHubCommunication.exe
+Z:\MyProjects\MYRND\IOT\AzureEventHubCommunication\AzureEventHubCommunication\bin\Debug\AzureEventHubCommunication.pdb
+Z:\MyProjects\MYRND\IOT\AzureEventHubCommunication\AzureEventHubCommunication\bin\Debug\Microsoft.ServiceBus.dll
+Z:\MyProjects\MYRND\IOT\AzureEventHubCommunication\AzureEventHubCommunication\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+Z:\MyProjects\MYRND\IOT\AzureEventHubCommunication\AzureEventHubCommunication\bin\Debug\Microsoft.ServiceBus.xml
+Z:\MyProjects\MYRND\IOT\AzureEventHubCommunication\AzureEventHubCommunication\bin\Debug\Microsoft.WindowsAzure.Configuration.xml
+Z:\MyProjects\MYRND\IOT\AzureEventHubCommunication\AzureEventHubCommunication\obj\Debug\AzureEventHubCommunication.csprojResolveAssemblyReference.cache
+Z:\MyProjects\MYRND\IOT\AzureEventHubCommunication\AzureEventHubCommunication\obj\Debug\AzureEventHubCommunication.exe
+Z:\MyProjects\MYRND\IOT\AzureEventHubCommunication\AzureEventHubCommunication\obj\Debug\AzureEventHubCommunication.pdb

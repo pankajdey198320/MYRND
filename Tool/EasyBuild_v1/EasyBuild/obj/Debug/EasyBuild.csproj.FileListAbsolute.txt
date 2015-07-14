@@ -1,0 +1,12 @@
+Z:\Tool\EasyBuild\EasyBuild\bin\EasyBuild.dll.config
+Z:\Tool\EasyBuild\EasyBuild\bin\EasyBuild.dll
+Z:\Tool\EasyBuild\EasyBuild\bin\EasyBuild.pdb
+Z:\Tool\EasyBuild\EasyBuild\obj\Debug\EasyBuild.csprojResolveAssemblyReference.cache
+Z:\Tool\EasyBuild\EasyBuild\obj\Debug\EasyBuild.dll
+Z:\Tool\EasyBuild\EasyBuild\obj\Debug\EasyBuild.pdb
+Z:\Tool\EasyBuild_v1\EasyBuild\bin\EasyBuild.dll.config
+Z:\Tool\EasyBuild_v1\EasyBuild\bin\EasyBuild.dll
+Z:\Tool\EasyBuild_v1\EasyBuild\bin\EasyBuild.pdb
+Z:\Tool\EasyBuild_v1\EasyBuild\obj\Debug\EasyBuild.csprojResolveAssemblyReference.cache
+Z:\Tool\EasyBuild_v1\EasyBuild\obj\Debug\EasyBuild.dll
+Z:\Tool\EasyBuild_v1\EasyBuild\obj\Debug\EasyBuild.pdb

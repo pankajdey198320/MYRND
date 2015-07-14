@@ -1,0 +1,9 @@
+Z:\Tool\EasyBuild_v1\BuildTask\bin\Debug\BuildTask.dll
+Z:\Tool\EasyBuild_v1\BuildTask\bin\Debug\BuildTask.pdb
+Z:\Tool\EasyBuild_v1\BuildTask\bin\Debug\Infrastructure.dll
+Z:\Tool\EasyBuild_v1\BuildTask\bin\Debug\Infrastructure.pdb
+Z:\Tool\EasyBuild_v1\BuildTask\obj\Debug\BuildTask.csprojResolveAssemblyReference.cache
+Z:\Tool\EasyBuild_v1\BuildTask\obj\Debug\BuildTask.dll
+Z:\Tool\EasyBuild_v1\BuildTask\obj\Debug\BuildTask.pdb
+Z:\Tool\EasyBuild_v1\BuildTask\bin\Debug\Integration.Infrastructure.dll
+Z:\Tool\EasyBuild_v1\BuildTask\bin\Debug\Integration.Infrastructure.pdb

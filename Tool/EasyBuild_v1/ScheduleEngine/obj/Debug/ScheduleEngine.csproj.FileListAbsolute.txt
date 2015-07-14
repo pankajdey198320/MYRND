@@ -1,0 +1,7 @@
+Z:\Tool\EasyBuild_v1\ScheduleEngine\bin\Debug\ScheduleEngine.dll
+Z:\Tool\EasyBuild_v1\ScheduleEngine\bin\Debug\ScheduleEngine.pdb
+Z:\Tool\EasyBuild_v1\ScheduleEngine\bin\Debug\Infrastructure.dll
+Z:\Tool\EasyBuild_v1\ScheduleEngine\bin\Debug\Infrastructure.pdb
+Z:\Tool\EasyBuild_v1\ScheduleEngine\obj\Debug\ScheduleEngine.csprojResolveAssemblyReference.cache
+Z:\Tool\EasyBuild_v1\ScheduleEngine\obj\Debug\ScheduleEngine.dll
+Z:\Tool\EasyBuild_v1\ScheduleEngine\obj\Debug\ScheduleEngine.pdb

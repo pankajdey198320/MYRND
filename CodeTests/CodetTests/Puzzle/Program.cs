@@ -11,7 +11,8 @@ namespace Puzzle
         static Dictionary<char, int> indexes = new Dictionary<char, int>();
         static void Main(string[] args)
         {
-            ArrangeTo100();
+            Console.WriteLine(x1.d.egg.ToString());
+
         }
         static void FindSimilar()
         {
@@ -40,6 +41,19 @@ namespace Puzzle
             var z = x.Min();
             var diff = 100 - result;
 
+        }
+
+
+    }
+    public class x1
+    {
+        public x1()
+        {
+            Console.WriteLine("test");
+        }
+        public enum d
+        {
+            egg, ppp
         }
     }
 }

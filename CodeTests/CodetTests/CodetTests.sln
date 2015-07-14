@@ -36,6 +36,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQLMerge", "SQLMerge", "{A6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoSQL", "AutoSQL\AutoSQL.csproj", "{C62B7E15-676E-47B1-A936-C8B9F6674825}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PackStack", "PackStack", "{87298E3D-02F8-41C7-AE85-5D2EAA46B92B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayWithCollection", "PlayWithCollection\PlayWithCollection.csproj", "{E2EEED6D-C5FA-4B7F-8FBD-8C4703F0DFC6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,6 +74,10 @@ Global
 		{C62B7E15-676E-47B1-A936-C8B9F6674825}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C62B7E15-676E-47B1-A936-C8B9F6674825}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C62B7E15-676E-47B1-A936-C8B9F6674825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2EEED6D-C5FA-4B7F-8FBD-8C4703F0DFC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2EEED6D-C5FA-4B7F-8FBD-8C4703F0DFC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2EEED6D-C5FA-4B7F-8FBD-8C4703F0DFC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2EEED6D-C5FA-4B7F-8FBD-8C4703F0DFC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,6 +90,7 @@ Global
 		{B4482A91-8423-4C0B-941A-80D73A4A7155} = {7A30319E-2EFA-42D6-BE26-6907080C43D6}
 		{2C8BE457-5566-44B0-AB73-38AF42BE37ED} = {D080B304-3EFA-4925-BCB5-266361FE1A68}
 		{C62B7E15-676E-47B1-A936-C8B9F6674825} = {A604F036-2794-41C3-A7D6-53F5CCA84A53}
+		{E2EEED6D-C5FA-4B7F-8FBD-8C4703F0DFC6} = {87298E3D-02F8-41C7-AE85-5D2EAA46B92B}
 	EndGlobalSection
 	GlobalSection(Performance) = preSolution
 		HasPerformanceSessions = true

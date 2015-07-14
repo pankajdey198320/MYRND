@@ -1,0 +1,6 @@
+Z:\MyProjects\MYRND\CodeTests\CodetTests\PlayWithCollection\bin\Debug\PlayWithCollection.exe.config
+Z:\MyProjects\MYRND\CodeTests\CodetTests\PlayWithCollection\bin\Debug\PlayWithCollection.exe
+Z:\MyProjects\MYRND\CodeTests\CodetTests\PlayWithCollection\bin\Debug\PlayWithCollection.pdb
+Z:\MyProjects\MYRND\CodeTests\CodetTests\PlayWithCollection\obj\Debug\PlayWithCollection.csprojResolveAssemblyReference.cache
+Z:\MyProjects\MYRND\CodeTests\CodetTests\PlayWithCollection\obj\Debug\PlayWithCollection.exe
+Z:\MyProjects\MYRND\CodeTests\CodetTests\PlayWithCollection\obj\Debug\PlayWithCollection.pdb

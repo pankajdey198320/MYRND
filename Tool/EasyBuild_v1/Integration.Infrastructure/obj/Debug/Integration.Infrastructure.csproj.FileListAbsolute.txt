@@ -1,0 +1,5 @@
+Z:\Tool\EasyBuild_v1\Integration.Infrastructure\bin\Debug\Integration.Infrastructure.dll
+Z:\Tool\EasyBuild_v1\Integration.Infrastructure\bin\Debug\Integration.Infrastructure.pdb
+Z:\Tool\EasyBuild_v1\Integration.Infrastructure\obj\Debug\Integration.Infrastructure.csprojResolveAssemblyReference.cache
+Z:\Tool\EasyBuild_v1\Integration.Infrastructure\obj\Debug\Integration.Infrastructure.dll
+Z:\Tool\EasyBuild_v1\Integration.Infrastructure\obj\Debug\Integration.Infrastructure.pdb

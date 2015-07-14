@@ -1,0 +1,38 @@
+build service
+	DO build
+		 when
+		 how
+Notification Service
+	Send Notification
+		when
+		what
+		how
+
+CodeSourceProvider
+	RepositoryServiceProvider
+	
+BuildServiceProvider
+
+BuildService	
+{
+	LoadBuildServiceProvider()
+	ExecuteService()
+	SendNotification()
+}
+
+BuildServiceProvider
+{
+	ResolveSource(ISourceCodeProvider);
+	LoadConfiguration();
+	Build()
+}
+
+SourceCodeProvider
+{
+	GetLatest();
+	SaveState();
+}
+
+BuildLogProvider(){
+
+}
