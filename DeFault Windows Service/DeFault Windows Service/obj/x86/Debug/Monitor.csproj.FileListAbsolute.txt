@@ -1,0 +1,2 @@
+C:\Projects\me\MyRND\DeFault Windows Service\DeFault Windows Service\obj\x86\Debug\DeFault Windows Service.exe
+C:\Projects\me\MyRND\DeFault Windows Service\DeFault Windows Service\obj\x86\Debug\DeFault Windows Service.pdb

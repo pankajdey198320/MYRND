@@ -8,3 +8,9 @@ F:\Backup\VIC_Doc\Tests\R_N_D\Security\TetsApp\TetsApp\bin\TetsApp.pdb
 F:\Backup\VIC_Doc\Tests\R_N_D\Security\TetsApp\TetsApp\obj\Debug\ResolveAssemblyReference.cache
 F:\Backup\VIC_Doc\Tests\R_N_D\Security\TetsApp\TetsApp\obj\Debug\TetsApp.dll
 F:\Backup\VIC_Doc\Tests\R_N_D\Security\TetsApp\TetsApp\obj\Debug\TetsApp.pdb
+C:\Projects\me\MyRND\TetsApp\bin\TetsApp.dll.config
+C:\Projects\me\MyRND\TetsApp\bin\TetsApp.dll
+C:\Projects\me\MyRND\TetsApp\bin\TetsApp.pdb
+C:\Projects\me\MyRND\TetsApp\obj\Debug\TetsApp.csprojResolveAssemblyReference.cache
+C:\Projects\me\MyRND\TetsApp\obj\Debug\TetsApp.dll
+C:\Projects\me\MyRND\TetsApp\obj\Debug\TetsApp.pdb

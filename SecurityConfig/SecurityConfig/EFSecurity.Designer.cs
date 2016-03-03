@@ -8,12 +8,13 @@
 //------------------------------------------------------------------------------
 
 using System;
+using System.ComponentModel;
+using System.Data.EntityClient;
 using System.Data.Objects;
 using System.Data.Objects.DataClasses;
-using System.Data.EntityClient;
-using System.ComponentModel;
-using System.Xml.Serialization;
+using System.Linq;
 using System.Runtime.Serialization;
+using System.Xml.Serialization;
 
 [assembly: EdmSchemaAttribute()]
 #region EDM Relationship Metadata
@@ -257,6 +258,7 @@ namespace SecurityConfig
         private ObjectSet<L_SECU_SECTION_OPERATION_MAP> _L_SECU_SECTION_OPERATION_MAP;
 
         #endregion
+
         #region AddTo Methods
     
         /// <summary>
@@ -348,11 +350,11 @@ namespace SecurityConfig
         }
 
         #endregion
+
     }
-    
 
     #endregion
-    
+
     #region Entities
     
     /// <summary>
@@ -381,6 +383,7 @@ namespace SecurityConfig
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -483,6 +486,7 @@ namespace SecurityConfig
         partial void OnCLASS_NAMEChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -531,6 +535,7 @@ namespace SecurityConfig
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -561,6 +566,7 @@ namespace SecurityConfig
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -663,6 +669,7 @@ namespace SecurityConfig
         partial void OnFK_MENU_MAP_IDChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -743,6 +750,7 @@ namespace SecurityConfig
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -783,6 +791,7 @@ namespace SecurityConfig
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -1005,6 +1014,7 @@ namespace SecurityConfig
         partial void OnCREATION_DATEChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -1107,6 +1117,7 @@ namespace SecurityConfig
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -1137,6 +1148,7 @@ namespace SecurityConfig
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -1239,6 +1251,7 @@ namespace SecurityConfig
         partial void OnCREATION_DATEChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -1265,6 +1278,7 @@ namespace SecurityConfig
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -1293,6 +1307,7 @@ namespace SecurityConfig
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -1419,6 +1434,7 @@ namespace SecurityConfig
         partial void OnTYPEChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -1483,6 +1499,7 @@ namespace SecurityConfig
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -1511,6 +1528,7 @@ namespace SecurityConfig
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -1613,6 +1631,7 @@ namespace SecurityConfig
         partial void OnOPERATION_MODEChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -1677,6 +1696,7 @@ namespace SecurityConfig
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -1711,6 +1731,7 @@ namespace SecurityConfig
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -1861,6 +1882,7 @@ namespace SecurityConfig
         partial void OnCREATION_DATEChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -1903,6 +1925,7 @@ namespace SecurityConfig
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -1933,6 +1956,7 @@ namespace SecurityConfig
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -2059,6 +2083,7 @@ namespace SecurityConfig
         partial void OnCREATION_DATEChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -2085,6 +2110,7 @@ namespace SecurityConfig
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -2115,6 +2141,7 @@ namespace SecurityConfig
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -2217,6 +2244,7 @@ namespace SecurityConfig
         partial void OnCREATION_DATEChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -2243,6 +2271,7 @@ namespace SecurityConfig
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -2277,6 +2306,7 @@ namespace SecurityConfig
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -2451,6 +2481,7 @@ namespace SecurityConfig
         partial void OnFK_METHOD_IDChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -2613,6 +2644,7 @@ namespace SecurityConfig
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -2637,6 +2669,7 @@ namespace SecurityConfig
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -2907,6 +2940,7 @@ namespace SecurityConfig
         partial void OnSCREEN_IDChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -2971,8 +3005,10 @@ namespace SecurityConfig
         }
 
         #endregion
+
     }
 
     #endregion
+
     
 }

@@ -29,20 +29,22 @@ namespace ConsoleApplication1
             //}
             try
             {
-                DisposeTest d = new DisposeTest();
-                try
+                using (DisposeTest d = new DisposeTest())
                 {
+                    //try
+                    //{
 
-                    throw new ApplicationException("One");
+                        throw new ApplicationException("One");
 
-                }
-                catch (ApplicationException apEx)
-                {
-                    Console.WriteLine(apEx.Message);
-                }
-                finally
-                {
-                    d.Dispose();
+                    //}
+                    //catch (ApplicationException apEx)
+                    //{
+                    //    Console.WriteLine(apEx.Message);
+                    //}
+                    //finally
+                    //{
+                    //   // d.Dispose();
+                    //}
                 }
             }
             catch (Exception sss)

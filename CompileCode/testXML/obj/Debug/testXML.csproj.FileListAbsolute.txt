@@ -1,0 +1,6 @@
+C:\Projects\me\MyRND\CompileCode\testXML\bin\Debug\testXML.exe.config
+C:\Projects\me\MyRND\CompileCode\testXML\bin\Debug\testXML.exe
+C:\Projects\me\MyRND\CompileCode\testXML\bin\Debug\testXML.pdb
+C:\Projects\me\MyRND\CompileCode\testXML\obj\Debug\testXML.csprojResolveAssemblyReference.cache
+C:\Projects\me\MyRND\CompileCode\testXML\obj\Debug\testXML.exe
+C:\Projects\me\MyRND\CompileCode\testXML\obj\Debug\testXML.pdb

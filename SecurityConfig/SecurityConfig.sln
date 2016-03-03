@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityConfig", "SecurityConfig\SecurityConfig.csproj", "{888D07D4-31BC-4E52-A2CB-A79C63F4E70B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigMvc", "ConfigMvc\ConfigMvc.csproj", "{ECEB2EB8-3590-48C2-9141-3322653E3134}"

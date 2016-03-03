@@ -1,0 +1,7 @@
+C:\Projects\me\MyRND\CompileCode\CompileCode\obj\x86\Debug\Interop.Shell32.dll
+C:\Projects\me\MyRND\CompileCode\CompileCode\obj\x86\Debug\CompileCode.csproj.ResolveComReference.cache
+C:\Projects\me\MyRND\CompileCode\CompileCode\bin\Debug\CompileCode.exe
+C:\Projects\me\MyRND\CompileCode\CompileCode\bin\Debug\CompileCode.pdb
+C:\Projects\me\MyRND\CompileCode\CompileCode\obj\x86\Debug\CompileCode.csprojResolveAssemblyReference.cache
+C:\Projects\me\MyRND\CompileCode\CompileCode\obj\x86\Debug\CompileCode.exe
+C:\Projects\me\MyRND\CompileCode\CompileCode\obj\x86\Debug\CompileCode.pdb

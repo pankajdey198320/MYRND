@@ -1,0 +1,5 @@
+C:\Projects\me\MyRND\SecurityConfig\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Projects\me\MyRND\SecurityConfig\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Projects\me\MyRND\SecurityConfig\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Projects\me\MyRND\SecurityConfig\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Projects\me\MyRND\SecurityConfig\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb

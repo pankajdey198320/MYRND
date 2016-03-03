@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/js/jquery-1.6.2.min.js" type="text/javascript"></script>
+    <script src="Scripts/js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function MakeDragable(selector, helper) {
+            jQuery(selector).draggable({
+                revert: "invalid",
+                //  containment: "#meain",
+                //helper: helper,
+                axis: "x",
+                opacity: 0.35
+            });
+        }
+        function MakeDropable(selector, callback) {
+            jQuery(selector).droppable({
+                addClasses: false,
+                // scope: 'tasks',
+                activeClass: "ui-state-active",
+                hoverClass: "ui-state-hover",
+                drop: function (event, ui) {
+                  //  alert($(ui.helper).parent().attr('vcol'));
+                    var parnt = this;
+                    callback(parnt, $(ui.helper).parent(), $(ui.helper));
+                }
+            });
+        }
+        $(document).ready(function () {
+            MakeDragable("#myID thead th span", null);
+            MakeDropable("#myID thead th", function (TargetObj, SrcObj, DropObj) {
+                //                var Temp = $(TargetObj).children().clone();
+                //                $(TargetObj).empty().append(DropObj);
+                //                $(DropObj).css('left', 0).css('top', 0);
+                //                $(SrcObj).empty().append(Temp);
+
+                swapObj(SrcObj, TargetObj);
+                var srcSelectorVal = $(SrcObj).attr('vcol');
+                var targetSelectorVal = $(TargetObj).attr('vcol');
+                var Srcs = $("#myID tbody td[vcol=" + srcSelectorVal + "]");
+                var trgts = $("#myID tbody td[vcol=" + targetSelectorVal + "]");
+                $(trgts).each(function (idx,itm ) {
+                    swapObj(itm, $(Srcs).eq(idx));
+                    
+
+                });
+
+                MakeDragable("#myID thead th span", null);
+
+                // alert($(SrcObj).html());
+            });
+            function swapObj(srcP, trgP) {
+                var Temp = $(trgP).children();
+                var objTo = $(srcP).children();
+                $(trgP).empty().append(objTo);
+                $(srcP).empty().append(Temp);
+                $(objTo).css('left', 0).css('top', 0);
+
+
+            }
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <table id="myID">
+            <thead>
+                <tr style="color: White; background-color: #5D7B9D; font-weight: bold;">
+                    
+                    <th scope="col" vcol="v_pk_id" >
+                       <span>PK_ID</span> 
+                    </th>
+                    <th scope="col" vcol="v_Name">
+                        <span>Name</span>
+                    </th>
+                    <th scope="col" vcol="v_ConfigType">
+                       <span> ConfigType</span>
+                    </th>
+                    <th scope="col" vcol="v_PermissionLevel">
+                        <span>PerMissionLevel</span>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr style="color: #333333; background-color: #F7F6F3;">
+                    
+                    <td vcol="v_pk_id" >
+                       <span> 1</span>
+                    </td>
+                    <td vcol="v_Name">
+                       <span> VIC</span>
+                    </td>
+                    <td vcol="v_ConfigType">
+                       <span> APPLICATION</span>
+                    </td>
+                    <td vcol="v_PermissionLevel">
+                        <span>SELECTIVE</span>
+                    </td>
+                </tr>
+                <tr style="color: #333333; background-color: #F7F6F3;">
+                    
+                    <td vcol="v_pk_id" >
+                       <span> 2</span>
+                    </td>
+                    <td vcol="v_Name">
+                       <span> ASD</span>
+                    </td>
+                    <td vcol="v_ConfigType">
+                       <span> AA</span>
+                    </td>
+                    <td vcol="v_PermissionLevel">
+                        <span>22222DF</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

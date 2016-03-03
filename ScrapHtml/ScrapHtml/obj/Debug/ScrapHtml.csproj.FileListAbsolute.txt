@@ -1,0 +1,6 @@
+C:\Projects\me\MyRND\ScrapHtml\ScrapHtml\bin\Debug\ScrapHtml.exe.config
+C:\Projects\me\MyRND\ScrapHtml\ScrapHtml\bin\Debug\ScrapHtml.exe
+C:\Projects\me\MyRND\ScrapHtml\ScrapHtml\bin\Debug\ScrapHtml.pdb
+C:\Projects\me\MyRND\ScrapHtml\ScrapHtml\obj\Debug\ScrapHtml.csprojResolveAssemblyReference.cache
+C:\Projects\me\MyRND\ScrapHtml\ScrapHtml\obj\Debug\ScrapHtml.exe
+C:\Projects\me\MyRND\ScrapHtml\ScrapHtml\obj\Debug\ScrapHtml.pdb
