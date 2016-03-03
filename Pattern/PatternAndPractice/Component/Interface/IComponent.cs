@@ -12,5 +12,9 @@ namespace Component
         void AddNextCompExecutionPoint(IConnector connector);
         bool InvokeNextComponent(T obj);
         void SartComponent(T obj);
+        IDictionary<string,string> Properties { get; set; }
+        bool IsStart { get; set; }
+        bool IsEnd { get; set; }
     }
+   
 }

@@ -52,7 +52,5 @@ namespace FactoryMethod
             prod.Display();
             Console.ReadKey();
         }
-            
-
     }
 }

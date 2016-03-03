@@ -4,3 +4,9 @@ Z:\MyProjects\MYRND\Pattern\PatternAndPractice\FactoryMethod\bin\Debug\FactoryMe
 Z:\MyProjects\MYRND\Pattern\PatternAndPractice\FactoryMethod\obj\Debug\FactoryMethod.csprojResolveAssemblyReference.cache
 Z:\MyProjects\MYRND\Pattern\PatternAndPractice\FactoryMethod\obj\Debug\FactoryMethod.exe
 Z:\MyProjects\MYRND\Pattern\PatternAndPractice\FactoryMethod\obj\Debug\FactoryMethod.pdb
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\FactoryMethod\bin\Debug\FactoryMethod.exe.config
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\FactoryMethod\bin\Debug\FactoryMethod.exe
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\FactoryMethod\bin\Debug\FactoryMethod.pdb
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\FactoryMethod\obj\Debug\FactoryMethod.csprojResolveAssemblyReference.cache
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\FactoryMethod\obj\Debug\FactoryMethod.exe
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\FactoryMethod\obj\Debug\FactoryMethod.pdb

@@ -18,17 +18,20 @@ namespace DelegateTest
             return id;
         }
 
-        internal void DoingTheAction(string value,Action afterWork) {
+        internal void DoingTheAction(string value, Action afterWork)
+        {
             Console.WriteLine("have done ::" + value);
-            System.Threading.Thread.Sleep(50000);
-            if (afterWork != null) {
+            System.Threading.Thread.CurrentThread.IsBackground = false;
+            System.Threading.Thread.Sleep(5000);
+            if (afterWork != null)
+            {
                 afterWork();
             }
         }
     }
 
 
-    class MyCustomRepository:List<MyCustom>
+    class MyCustomRepository : List<MyCustom>
     {
         public MyCustomRepository()
         {
@@ -42,7 +45,8 @@ namespace DelegateTest
             this.Add(new MyCustom(19));
             this.Add(new MyCustom(200));
         }
-        internal int CompareBy(MyCustom t1, MyCustom t2) {
+        internal int CompareBy(MyCustom t1, MyCustom t2)
+        {
             return t1.id.CompareTo(t2.id);
         }
     }

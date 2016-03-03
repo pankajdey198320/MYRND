@@ -19,7 +19,10 @@ namespace Component.MessageContext
             }
         }
 
-
+        public BaseMessageContext()
+        {
+            _Message = string.Empty;
+        }
         public string GetPropertyvalye(string propertyName)
         {
             throw new NotImplementedException();

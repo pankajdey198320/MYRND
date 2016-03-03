@@ -18,8 +18,12 @@ namespace Component.Implementation
         {
             this.ConnectLogic = new Conditions();
         }
-        
-        
+        public ForwardConnector(IComponent<IMessageContext> obj)
+        {
+            _target = obj.SartComponent;
+            this.ConnectLogic = new Conditions();
+        }
+
         public void SetTarget(Action<IMessageContext> target)
         {
             _target = target;

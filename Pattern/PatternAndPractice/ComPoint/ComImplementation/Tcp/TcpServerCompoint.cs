@@ -11,7 +11,7 @@ namespace ComPoint.ComImplementation.Tcp
 {
     public class TcpServerCompoint : CommunicationComponentBase
     {
-      
+
         class TcpClientStateObject
         {
             internal byte[] buffer;
@@ -21,23 +21,23 @@ namespace ComPoint.ComImplementation.Tcp
             {
                 this.buffer = buffer; this.Client = client;
             }
-            public TcpClientStateObject(Byte[] buffer, TcpClient client,IMessageContext context)
-                :this(buffer,client)
+            public TcpClientStateObject(Byte[] buffer, TcpClient client, IMessageContext context)
+                : this(buffer, client)
             {
                 this.Context = context;
             }
         }
 
-        public override void SartComponent(IMessageContext  obj)
+        public override void SartComponent(IMessageContext obj)
         {
             base.SartComponent(obj);
-            
+
             this._server.Start();
             this._server.BeginAcceptTcpClient(new AsyncCallback(ReceivedClient), this._server);
 
         }
-      
-       
+
+
 
         #region logic for tcp
 
@@ -45,21 +45,22 @@ namespace ComPoint.ComImplementation.Tcp
         TcpClient _client;
 
         public IPEndPoint EndPoint { get; set; }
-        public TcpServerCompoint()
+        public TcpServerCompoint():base()
         {
             if (this.EndPoint == null)
             {
-                IPAddress _address = IPAddress.Parse("127.0.0.1");
-                this.EndPoint = new IPEndPoint(_address, 3838);
+                IPAddress _address = IPAddress.Parse(Properties["IpAddress"]);
+                this.EndPoint = new IPEndPoint(_address, Convert.ToInt32(Properties["Port"]));
             }
             _server = new System.Net.Sockets.TcpListener(this.EndPoint);
 
         }
 
-        
+
 
         void ReceivedClient(IAsyncResult state)
         {
+            System.Threading.Thread.CurrentThread.IsBackground = true;
             var obj = (TcpListener)state.AsyncState;
             var client = obj.EndAcceptTcpClient(state);
             NetworkStream networkStream = client.GetStream();
@@ -92,7 +93,7 @@ namespace ComPoint.ComImplementation.Tcp
                     }
                     byte[] buffer = new byte[state.Client.ReceiveBufferSize];
                     state.buffer = buffer;
-                   
+
                     state.Client.Client.BeginReceive(buffer, 0, buffer.Length, SocketFlags.Partial, ReadCallBack, state);
                     //networkStream.BeginRead(buffer, 0, buffer.Length, ReadCallBack, new TcpClientStateObject(buffer, state.Client));
                 }
@@ -103,7 +104,7 @@ namespace ComPoint.ComImplementation.Tcp
             }
         }
 
-        
+
         #endregion
     }
 }

@@ -32,7 +32,7 @@ namespace TheUnitOfWork
 
     #region Repository
 
-    public class BaseRepository<T> : IList<T> where T : Entity
+    public class BaseRepository<T> : List<T> where T : Entity
     {
         public T GetByKey(Guid key)
         {
@@ -43,7 +43,7 @@ namespace TheUnitOfWork
             return this;
         }
 
-        public void Add(T entity)
+        public new void Add(T entity)
         {
             this.Add(entity);
         }

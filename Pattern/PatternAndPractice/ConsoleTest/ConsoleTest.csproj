@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="SampleService.json" />
+    <None Include="BasicProperties.json" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ComPoint\ComPoint.csproj">

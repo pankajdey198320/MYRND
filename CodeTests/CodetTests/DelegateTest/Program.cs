@@ -13,10 +13,11 @@ namespace DelegateTest
             MyCustom v = new MyCustom(10);
             Func<string, int> myDele = (a) => { return Convert.ToInt32(a); };// v.GetLength;
             
-            Console.WriteLine(myDele("pankaj"));
+            Console.WriteLine(myDele("2"));
             Action<string, Action> myAction = v.DoingTheAction;
             myAction.BeginInvoke("Hey buddy", () =>
             {
+               
                 Console.WriteLine("Have done enough here buddy");
             }, (x) =>
             {
@@ -25,7 +26,17 @@ namespace DelegateTest
                     Console.WriteLine("bingo");
                 }
             }, null);
-
+            myAction.BeginInvoke("Hey p", () =>
+            {
+                
+                Console.WriteLine("Have done enough here buddy");
+            }, (x) =>
+            {
+                if (x.IsCompleted)
+                {
+                    Console.WriteLine("to to");
+                }
+            }, null);
             Predicate<string> po = (val) =>
             {
                 if (val == "pankaj") return true;
@@ -34,8 +45,8 @@ namespace DelegateTest
 
             MyCustomRepository rp = new MyCustomRepository();
             rp.Sort(rp.CompareBy);
-
-            Console.ReadKey();
+            Console.WriteLine("cpool");
+            //Console.ReadKey();
         }
     }
 }
