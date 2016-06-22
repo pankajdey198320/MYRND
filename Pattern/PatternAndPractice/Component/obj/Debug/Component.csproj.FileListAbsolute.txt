@@ -2,3 +2,17 @@ Z:\MyProjects\MYRND\Pattern\PatternAndPractice\Component\bin\Debug\Component.dll
 Z:\MyProjects\MYRND\Pattern\PatternAndPractice\Component\bin\Debug\Component.pdb
 Z:\MyProjects\MYRND\Pattern\PatternAndPractice\Component\obj\Debug\Component.dll
 Z:\MyProjects\MYRND\Pattern\PatternAndPractice\Component\obj\Debug\Component.pdb
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\Component\bin\Debug\Component.dll
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\Component\bin\Debug\Component.pdb
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\Component\obj\Debug\Component.csprojResolveAssemblyReference.cache
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\Component\obj\Debug\Component.dll
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\Component\obj\Debug\Component.pdb
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\Component\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\Component\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\Component\bin\Debug\Component.dll
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\Component\bin\Debug\Component.pdb
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\Component\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\Component\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\Component\obj\Debug\Component.dll
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\Component\obj\Debug\Component.pdb
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\Component\obj\Debug\Component.csprojResolveAssemblyReference.cache

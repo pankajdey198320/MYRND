@@ -8,7 +8,7 @@
         "Connectors": [
           {
             "Connector": "ForwardConnector",
-            "Component": {"ComponentName": "EndComponent" }
+            "Component": { "ComponentName": "EndComponent" }
           }
         ]
       }

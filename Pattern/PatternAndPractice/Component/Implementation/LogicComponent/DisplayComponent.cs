@@ -21,6 +21,7 @@ namespace Component.Implementation.LogicComponent
         public FormatatedDispayComponent(List<IConnector> connectors) : base(connectors) { }
         public override void SartComponent(IMessageContext obj)
         {
+            obj.Message += "Modified at component ";
             Console.WriteLine(string.Format("This is formated Dispay of input {0}", obj.Message));
             base.SartComponent(obj);
         }

@@ -1,0 +1,12 @@
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\TheUnitOfWork\bin\Debug\TheUnitOfWork.exe.config
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\TheUnitOfWork\bin\Debug\TheUnitOfWork.exe
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\TheUnitOfWork\bin\Debug\TheUnitOfWork.pdb
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\TheUnitOfWork\obj\Debug\TheUnitOfWork.exe
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\TheUnitOfWork\obj\Debug\TheUnitOfWork.pdb
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\TheUnitOfWork\bin\Debug\TheUnitOfWork.exe.config
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\TheUnitOfWork\bin\Debug\TheUnitOfWork.exe
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\TheUnitOfWork\bin\Debug\TheUnitOfWork.pdb
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\TheUnitOfWork\obj\Debug\TheUnitOfWork.exe
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\TheUnitOfWork\obj\Debug\TheUnitOfWork.pdb
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\TheUnitOfWork\bin\Debug\TheUnitOfWork.exe.CodeAnalysisLog.xml
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\TheUnitOfWork\bin\Debug\TheUnitOfWork.exe.lastcodeanalysissucceeded

@@ -71,7 +71,7 @@ namespace ComPoint.ComImplementation
             });
             Console.WriteLine("test another");
             state.Listner.BeginGetContext(new AsyncCallback(fo), new HttpState() { Listner = state.Listner
-                , MessageContext = new BaseMessageContext()
+                , MessageContext = state.MessageContext
             });
         }
     }

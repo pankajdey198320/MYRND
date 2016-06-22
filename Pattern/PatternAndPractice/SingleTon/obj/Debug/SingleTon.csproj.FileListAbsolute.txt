@@ -4,3 +4,17 @@ Z:\MyProjects\MYRND\Pattern\PatternAndPractice\SingleTon\bin\Debug\SingleTon.pdb
 Z:\MyProjects\MYRND\Pattern\PatternAndPractice\SingleTon\obj\Debug\SingleTon.csprojResolveAssemblyReference.cache
 Z:\MyProjects\MYRND\Pattern\PatternAndPractice\SingleTon\obj\Debug\SingleTon.exe
 Z:\MyProjects\MYRND\Pattern\PatternAndPractice\SingleTon\obj\Debug\SingleTon.pdb
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\SingleTon\bin\Debug\SingleTon.exe.config
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\SingleTon\obj\Debug\SingleTon.exe
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\SingleTon\obj\Debug\SingleTon.pdb
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\SingleTon\bin\Debug\SingleTon.exe
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\SingleTon\bin\Debug\SingleTon.pdb
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\SingleTon\obj\Debug\SingleTon.csprojResolveAssemblyReference.cache
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\SingleTon\bin\Debug\SingleTon.exe.config
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\SingleTon\bin\Debug\SingleTon.exe
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\SingleTon\bin\Debug\SingleTon.pdb
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\SingleTon\obj\Debug\SingleTon.csprojResolveAssemblyReference.cache
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\SingleTon\obj\Debug\SingleTon.exe
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\SingleTon\obj\Debug\SingleTon.pdb
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\SingleTon\bin\Debug\SingleTon.exe.CodeAnalysisLog.xml
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\SingleTon\bin\Debug\SingleTon.exe.lastcodeanalysissucceeded

@@ -1,0 +1,17 @@
+﻿{
+  "ComponentName": "SimpleTimer",
+  "Connectors": [
+    {
+      "Connector": "ForwardConnector",
+      "Component": {
+        "ComponentName": "FormatatedDispayComponent",
+        "Connectors": [
+          {
+            "Connector": "ForwardConnector",
+            "Component": {"ComponentName": "EndComponent" }
+          }
+        ]
+      }
+    }
+  ]
+}

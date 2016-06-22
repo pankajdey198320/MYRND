@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="SampleService - Copy.json" />
     <None Include="SampleService.json" />
     <None Include="BasicProperties.json" />
   </ItemGroup>

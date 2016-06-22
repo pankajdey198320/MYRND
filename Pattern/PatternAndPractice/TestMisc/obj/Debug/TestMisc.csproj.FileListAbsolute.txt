@@ -1,0 +1,14 @@
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\TestMisc\bin\Debug\TestMisc.exe.config
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\TestMisc\bin\Debug\TestMisc.exe
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\TestMisc\bin\Debug\TestMisc.pdb
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\TestMisc\obj\Debug\TestMisc.csprojResolveAssemblyReference.cache
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\TestMisc\obj\Debug\TestMisc.exe
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\TestMisc\obj\Debug\TestMisc.pdb
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\TestMisc\bin\Debug\TestMisc.exe.config
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\TestMisc\bin\Debug\TestMisc.exe
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\TestMisc\bin\Debug\TestMisc.pdb
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\TestMisc\obj\Debug\TestMisc.csprojResolveAssemblyReference.cache
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\TestMisc\obj\Debug\TestMisc.exe
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\TestMisc\obj\Debug\TestMisc.pdb
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\TestMisc\bin\Debug\TestMisc.exe.CodeAnalysisLog.xml
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\TestMisc\bin\Debug\TestMisc.exe.lastcodeanalysissucceeded

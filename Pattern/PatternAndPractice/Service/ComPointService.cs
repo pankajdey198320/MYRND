@@ -36,11 +36,11 @@ namespace Service
             //c2.AddConditionLogic("a", "b", Component.Implementation.Common.Operator.Equal);
             //compBase.AddNextCompExecutionPoint(connector);
             //compBase.AddNextCompExecutionPoint(c2);
-            var x = new ComPoint.ComImplementation.TimerComp.SimpleTimer();
+          //  var x = new ComPoint.ComImplementation.TimerComp.SimpleTimer();
 
             //IConnector c2 = new ForwardConnector();
 
-            var c = JsonConvert.DeserializeObject<ComponentConfiguration>(System.IO.File.ReadAllText(@"C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\ConsoleTest\SampleService.json"));
+            var c = JsonConvert.DeserializeObject<ComponentConfiguration>(System.IO.File.ReadAllText(@"C:\Projects\me\MyRND\Pattern\PatternAndPractice\ConsoleTest\SampleService.json"));
             _begin = c.Comp;
             //_begin = new StartComponent(
             //    new List<IConnector>()
