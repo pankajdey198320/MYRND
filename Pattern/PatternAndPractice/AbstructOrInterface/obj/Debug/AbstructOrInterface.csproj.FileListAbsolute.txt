@@ -12,8 +12,5 @@ C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Pattern\PatternAndPractice\Ab
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\AbstructOrInterface\bin\Debug\AbstructOrInterface.exe.config
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\AbstructOrInterface\bin\Debug\AbstructOrInterface.exe
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\AbstructOrInterface\bin\Debug\AbstructOrInterface.pdb
-C:\Projects\me\MyRND\Pattern\PatternAndPractice\AbstructOrInterface\obj\Debug\AbstructOrInterface.csprojResolveAssemblyReference.cache
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\AbstructOrInterface\obj\Debug\AbstructOrInterface.exe
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\AbstructOrInterface\obj\Debug\AbstructOrInterface.pdb
-C:\Projects\me\MyRND\Pattern\PatternAndPractice\AbstructOrInterface\bin\Debug\AbstructOrInterface.exe.CodeAnalysisLog.xml
-C:\Projects\me\MyRND\Pattern\PatternAndPractice\AbstructOrInterface\bin\Debug\AbstructOrInterface.exe.lastcodeanalysissucceeded

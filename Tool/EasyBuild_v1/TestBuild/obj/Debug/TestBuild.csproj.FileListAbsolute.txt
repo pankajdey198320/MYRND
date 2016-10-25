@@ -26,3 +26,6 @@ Z:\Tool\EasyBuild_v1\TestBuild\bin\Debug\TaskScheduleConfigurationResolver.dll
 Z:\Tool\EasyBuild_v1\TestBuild\bin\Debug\TaskScheduleConfigurationResolver.pdb
 Z:\Tool\EasyBuild_v1\TestBuild\bin\Debug\Integration.Infrastructure.dll
 Z:\Tool\EasyBuild_v1\TestBuild\bin\Debug\Integration.Infrastructure.pdb
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Tool\EasyBuild_v1\TestBuild\bin\Debug\TestBuild.exe.config
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Tool\EasyBuild_v1\TestBuild\obj\Debug\TestBuild.exe
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\Tool\EasyBuild_v1\TestBuild\obj\Debug\TestBuild.pdb

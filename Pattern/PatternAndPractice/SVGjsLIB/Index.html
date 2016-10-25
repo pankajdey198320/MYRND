@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript">
+  
+        function createRect() {
+            var svg = new HtmlDomElement('svg', "http://www.w3.org/2000/svg");
+            svg.addAttr('width', 320);
+            svg.addAttr('height', 320);
+            svg.addAttr('viewBox', '0 0 320 320');
+            DisplayComponent(10, 10, 100, 100, svg);
+
+
+            DisplayComponent(110, 110, 100, 100, svg);
+            //var rect = new HtmlDomElement('rect', "http://www.w3.org/2000/svg");
+            //rect.addAttr('x', 10);
+            //rect.addAttr('y', 10);
+            //rect.addAttr('width', 100);
+            //rect.addAttr('height', 100);
+            //rect.addAttr('rx', 15);
+            //rect.addAttr('ry', 15);
+            //rect.addAttr('fill', '#95B3D7');
+            //svg.appendChild(rect);
+
+            //var node = new HtmlDomElement('circle', "http://www.w3.org/2000/svg");
+            //node.addAttr('cx', 110);
+            //node.addAttr('cy', 60);
+            //node.addAttr('r', 5);
+            //node.addAttr('stroke-width', 0);
+            //node.addAttr('fill', 'black');
+            //svg.appendChild(node);
+            document.body.appendChild(svg.elem);
+        }
+ 
+
+        function HtmlDomElement(tag,namespace) {
+            this.elem = namespace.length > 1
+                ? document.createElementNS("http://www.w3.org/2000/svg", tag)
+                : document.createElement(tag);
+            this.addAttr=function(key, value) {
+                var _atr = document.createAttribute(key);
+                _atr.value = value;
+                this.elem.setAttributeNode(_atr);
+            }
+            this.appendChild = function(e) {
+
+                this.elem.appendChild(e.elem);
+            }
+
+        }
+
+
+        function DisplayComponent(x,y,width,height,svg) {
+            this.name = 'Display';
+            this.comp = createRect(svg);
+
+            function createRect(svg) {
+                var nameSpace = svg.elem.namespaceURI;
+
+                var rect = new HtmlDomElement('rect', nameSpace);
+                rect.addAttr('x', x);
+                rect.addAttr('y', y);
+                rect.addAttr('width',width);
+                rect.addAttr('height',height);
+                rect.addAttr('rx', 15);
+                rect.addAttr('ry', 15);
+                rect.addAttr('fill', '#95B3D7');
+                rect.addAttr('draggable', 'true');
+                svg.appendChild(rect);
+
+                var nodeEnd = new HtmlDomElement('circle', nameSpace);
+                nodeEnd.addAttr('cx', x+width);
+                nodeEnd.addAttr('cy', y+height/2);
+                nodeEnd.addAttr('r', 5);
+                nodeEnd.addAttr('stroke-width', 0);
+                nodeEnd.addAttr('fill', 'black');
+
+                var nodeStart= new HtmlDomElement('circle', nameSpace);
+                nodeStart.addAttr('cx', x );
+                nodeStart.addAttr('cy', y + height / 2);
+                nodeStart.addAttr('r', 5);
+                nodeStart.addAttr('stroke-width', 0);
+                nodeStart.addAttr('fill', 'black');
+                svg.appendChild(nodeStart);
+                svg.appendChild(nodeEnd);
+                return rect;
+            }
+        }
+    </script>
+</head>
+<body>
+<!--<svg width="120" height="120"
+         viewBox="120 120 120 120"
+         xmlns="http://www.w3.org/2000/svg">
+
+   
+    <circle cx="50" cy="50" r="5" stroke="black" stroke-width="0" fill="bkack"></circle>
+</svg>--><div id="drag1" 
+     ondragstart="drag(event)" width="336" height="69">asdasdas as as</div>
+<script type="text/javascript">
+    createRect();
+</script>
+    
+</body>
+</html>

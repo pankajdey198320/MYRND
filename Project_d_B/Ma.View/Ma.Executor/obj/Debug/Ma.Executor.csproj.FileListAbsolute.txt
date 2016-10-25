@@ -1,0 +1,5 @@
+C:\Projects\me\MyRND\Project_d_B\Ma.View\Ma.Executor\bin\Debug\Ma.Executor.dll
+C:\Projects\me\MyRND\Project_d_B\Ma.View\Ma.Executor\bin\Debug\Ma.Executor.pdb
+C:\Projects\me\MyRND\Project_d_B\Ma.View\Ma.Executor\obj\Debug\Ma.Executor.csprojResolveAssemblyReference.cache
+C:\Projects\me\MyRND\Project_d_B\Ma.View\Ma.Executor\obj\Debug\Ma.Executor.dll
+C:\Projects\me\MyRND\Project_d_B\Ma.View\Ma.Executor\obj\Debug\Ma.Executor.pdb

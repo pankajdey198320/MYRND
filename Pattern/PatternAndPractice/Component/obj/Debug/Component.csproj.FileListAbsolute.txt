@@ -13,6 +13,6 @@ C:\Projects\me\MyRND\Pattern\PatternAndPractice\Component\bin\Debug\Component.dl
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\Component\bin\Debug\Component.pdb
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\Component\bin\Debug\Newtonsoft.Json.dll
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\Component\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\me\MyRND\Pattern\PatternAndPractice\Component\obj\Debug\Component.csprojResolveAssemblyReference.cache
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\Component\obj\Debug\Component.dll
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\Component\obj\Debug\Component.pdb
-C:\Projects\me\MyRND\Pattern\PatternAndPractice\Component\obj\Debug\Component.csprojResolveAssemblyReference.cache

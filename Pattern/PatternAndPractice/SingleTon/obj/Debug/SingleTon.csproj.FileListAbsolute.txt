@@ -16,5 +16,3 @@ C:\Projects\me\MyRND\Pattern\PatternAndPractice\SingleTon\bin\Debug\SingleTon.pd
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\SingleTon\obj\Debug\SingleTon.csprojResolveAssemblyReference.cache
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\SingleTon\obj\Debug\SingleTon.exe
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\SingleTon\obj\Debug\SingleTon.pdb
-C:\Projects\me\MyRND\Pattern\PatternAndPractice\SingleTon\bin\Debug\SingleTon.exe.CodeAnalysisLog.xml
-C:\Projects\me\MyRND\Pattern\PatternAndPractice\SingleTon\bin\Debug\SingleTon.exe.lastcodeanalysissucceeded

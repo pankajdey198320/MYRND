@@ -4,3 +4,6 @@ Z:\MyProjects\MYRND\IOT\AiNetSnif\AiNetSnif\bin\Debug\AiNetSnif.pdb
 Z:\MyProjects\MYRND\IOT\AiNetSnif\AiNetSnif\obj\Debug\AiNetSnif.csprojResolveAssemblyReference.cache
 Z:\MyProjects\MYRND\IOT\AiNetSnif\AiNetSnif\obj\Debug\AiNetSnif.exe
 Z:\MyProjects\MYRND\IOT\AiNetSnif\AiNetSnif\obj\Debug\AiNetSnif.pdb
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\IOT\AiNetSnif\AiNetSnif\bin\Debug\AiNetSnif.exe.config
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\IOT\AiNetSnif\AiNetSnif\obj\Debug\AiNetSnif.exe
+C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\IOT\AiNetSnif\AiNetSnif\obj\Debug\AiNetSnif.pdb

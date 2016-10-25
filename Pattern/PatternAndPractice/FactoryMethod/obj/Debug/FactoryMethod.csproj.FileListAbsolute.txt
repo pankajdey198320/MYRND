@@ -16,5 +16,3 @@ C:\Projects\me\MyRND\Pattern\PatternAndPractice\FactoryMethod\bin\Debug\FactoryM
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\FactoryMethod\obj\Debug\FactoryMethod.csprojResolveAssemblyReference.cache
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\FactoryMethod\obj\Debug\FactoryMethod.exe
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\FactoryMethod\obj\Debug\FactoryMethod.pdb
-C:\Projects\me\MyRND\Pattern\PatternAndPractice\FactoryMethod\bin\Debug\FactoryMethod.exe.CodeAnalysisLog.xml
-C:\Projects\me\MyRND\Pattern\PatternAndPractice\FactoryMethod\bin\Debug\FactoryMethod.exe.lastcodeanalysissucceeded

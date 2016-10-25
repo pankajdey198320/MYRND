@@ -1,0 +1,52 @@
+﻿@using System;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+@{
+    var pth = this.Context.Request.Path.ToString();
+    pth = pth.Substring(0, pth.Length - 1);
+    pth=  pth.Substring(0,pth.LastIndexOf('/'))+"/";
+    // pth.Substring(pth.IndexOf('/'));
+}
+<a href="@pth" class="btn btn-default" style="color:#532803; font-size:24px;">
+    <span class="fa fa-level-up" aria-hidden="true"></span>
+</a><br />
+@foreach (var x in Model)
+{
+    var href = "";
+
+
+    if (x.Type == MyWorks.Controllers.DirFile.FileType.folder)
+    {
+        href = $"{x.Name}/";
+    }
+    else
+    {
+        href = "#";
+
+    }
+    @{
+        var css = "";
+        var filePath = "";
+        if (x.Type == MyWorks.Controllers.DirFile.FileType.file)
+        {
+            css = "fa fa-file-text";
+            filePath = x.FileId;
+        }
+        else if (x.Type == MyWorks.Controllers.DirFile.FileType.folder)
+        {
+            css = "fa fa-folder";
+        }
+    }
+
+    <a href="@href" class="btn btn-default" aria-label="Left Align" style="width:140px;margin-top:10px;">
+       
+        <span class="@css" aria-hidden="true" style="color:#dd7b28; font-size:36px;"></span>
+        <p>
+            @x.Name
+        </p>
+    </a>
+            }
