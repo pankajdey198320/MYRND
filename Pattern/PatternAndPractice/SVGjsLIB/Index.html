@@ -10,27 +10,13 @@
             svg.addAttr('width', 320);
             svg.addAttr('height', 320);
             svg.addAttr('viewBox', '0 0 320 320');
-            DisplayComponent(10, 10, 100, 100, svg);
+            var g = createGroup(svg);
+            CreateTable(4,g);
+            //DisplayComponent(10, 10, 100, 100, svg);
 
 
-            DisplayComponent(110, 110, 100, 100, svg);
-            //var rect = new HtmlDomElement('rect', "http://www.w3.org/2000/svg");
-            //rect.addAttr('x', 10);
-            //rect.addAttr('y', 10);
-            //rect.addAttr('width', 100);
-            //rect.addAttr('height', 100);
-            //rect.addAttr('rx', 15);
-            //rect.addAttr('ry', 15);
-            //rect.addAttr('fill', '#95B3D7');
-            //svg.appendChild(rect);
-
-            //var node = new HtmlDomElement('circle', "http://www.w3.org/2000/svg");
-            //node.addAttr('cx', 110);
-            //node.addAttr('cy', 60);
-            //node.addAttr('r', 5);
-            //node.addAttr('stroke-width', 0);
-            //node.addAttr('fill', 'black');
-            //svg.appendChild(node);
+            //DisplayComponent(110, 110, 100, 100, svg);
+          
             document.body.appendChild(svg.elem);
         }
  
@@ -88,6 +74,49 @@
                 return rect;
             }
         }
+        function createRectangle(x, y, width, height) {
+            var rect = new HtmlDomElement('rect', "http://www.w3.org/2000/svg");
+            rect.addAttr('x', x);
+            rect.addAttr('y', y);
+            rect.addAttr('width', width);
+            rect.addAttr('height', height);
+            rect.addAttr('stroke-width', 1);
+            rect.addAttr('stroke', 'black');
+            rect.addAttr('fill', 'transparent');
+            return rect;
+        }
+        function createGroup(svg) {
+            var g = new HtmlDomElement('g', "http://www.w3.org/2000/svg");
+            g.addAttr('x', 50);
+            g.addAttr('y', 40);
+            svg.appendChild(g);
+            return g;
+        }
+        function CreateTable(numberOfRow,svg) {
+            var x = 0;
+            var y = 0;
+            var wdth = 100;
+            var rowHeight = 20;
+            var tbl = createRectangle(0, 0, wdth, rowHeight * numberOfRow);
+            svg.appendChild(tbl);
+            for (var i = 1; i <= numberOfRow; i++) {
+              addRow(x, i * rowHeight, 100, rowHeight,svg);
+            }
+           
+            return tbl;
+        }
+        function addRow(x, y, width, height,svg) {
+            var rect = new HtmlDomElement('rect', "http://www.w3.org/2000/svg");
+            rect.addAttr('x', x);
+            rect.addAttr('y', y);
+            rect.addAttr('width', width);
+            rect.addAttr('height', height);      
+            rect.addAttr('stroke-width', .5);
+            rect.addAttr('stroke', 'black');    
+            rect.addAttr('fill', 'transparent');
+            svg.appendChild(rect);
+            return rect;
+        }
     </script>
 </head>
 <body>
@@ -102,6 +131,35 @@
 <script type="text/javascript">
     createRect();
 </script>
+
+    <!--<svg width="320" height="320" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 315
+           L 110 215
+           A 30 50 0 0 1 162.55 162.45
+           L 172.55 152.45
+           A 30 50 -45 0 1 215.1 109.9
+           L 315 10" stroke="black" fill="green" stroke-width="2" fill-opacity="0.5" />
+
+        <path id="my_path" d="M 20,20 C 40,40 80,40 100,20" fill="transparent" />
+        <text>
+            <textPath xlink:href="#my_path">This text follows a curve.</textPath>
+        </text>
+    </svg>
+
+    <svg width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <linearGradient id="Gradient">
+                <stop offset="0" stop-color="white" stop-opacity="0" />
+                <stop offset="1" stop-color="white" stop-opacity="1" />
+            </linearGradient>
+            <mask id="Mask">
+                <rect x="0" y="0" width="200" height="200" fill="url(#Gradient)" />
+            </mask>
+        </defs>
+
+        <rect x="0" y="0" width="200" height="200" fill="green" />
+        <rect x="0" y="0" width="200" height="200" fill="red" mask="url(#Mask)" />
+    </svg>-->
     
 </body>
 </html>
