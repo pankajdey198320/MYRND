@@ -10,7 +10,7 @@
             svg.addAttr('width', 320);
             svg.addAttr('height', 320);
             svg.addAttr('viewBox', '0 0 320 320');
-            var g = createGroup(svg);
+            var g = createGroup(svg,45,50);
             CreateTable(4,g);
             //DisplayComponent(10, 10, 100, 100, svg);
 
@@ -85,10 +85,10 @@
             rect.addAttr('fill', 'transparent');
             return rect;
         }
-        function createGroup(svg) {
+        function createGroup(svg,x,y) {
             var g = new HtmlDomElement('g', "http://www.w3.org/2000/svg");
-            g.addAttr('x', 50);
-            g.addAttr('y', 40);
+            //g.addAttr('x', x);
+            //g.addAttr('y', y);
             svg.appendChild(g);
             return g;
         }
@@ -97,15 +97,16 @@
             var y = 0;
             var wdth = 100;
             var rowHeight = 20;
-            var tbl = createRectangle(0, 0, wdth, rowHeight * numberOfRow);
+            var tbl = createRectangle(0, 0, wdth, rowHeight * (numberOfRow));
             svg.appendChild(tbl);
-            for (var i = 1; i <= numberOfRow; i++) {
-              addRow(x, i * rowHeight, 100, rowHeight,svg);
+            for (var i = 0; i < numberOfRow; i++) {
+                addRow(x, i * rowHeight, 100, rowHeight, i,svg);
             }
            
             return tbl;
         }
-        function addRow(x, y, width, height,svg) {
+        function addRow(x, y, width, height,value, svg) {
+            var g = createGroup(svg, x, y);
             var rect = new HtmlDomElement('rect', "http://www.w3.org/2000/svg");
             rect.addAttr('x', x);
             rect.addAttr('y', y);
@@ -114,8 +115,32 @@
             rect.addAttr('stroke-width', .5);
             rect.addAttr('stroke', 'black');    
             rect.addAttr('fill', 'transparent');
-            svg.appendChild(rect);
+            svg.appendChild(g);
+            var text = createTextNode(x + 3, y+height-5 , value,g);
+           // g.appendChild(text);
+            g.appendChild(rect);
             return rect;
+        }
+
+        function createTextNode(x,y,value,svg) {
+            var text = new HtmlDomElement('text', "http://www.w3.org/2000/svg");
+            text.addAttr('x', x);
+            text.addAttr('y', y);
+            text.elem.innerHTML = value;
+            svg.appendChild(text);
+            return text;
+        }
+
+        function processJsonToTable() {
+            var d = { name: "pankaj", year: 1983 };
+            var x = 0;
+            var y = 0;
+            var wdth = 100;
+            var rowHeight = 20;
+            var tbl = createRectangle(0, 0, wdth, rowHeight * 1);
+            svg.appendChild(tbl);
+
+
         }
     </script>
 </head>
@@ -126,8 +151,7 @@
 
    
     <circle cx="50" cy="50" r="5" stroke="black" stroke-width="0" fill="bkack"></circle>
-</svg>--><div id="drag1" 
-     ondragstart="drag(event)" width="336" height="69">asdasdas as as</div>
+</svg>-->
 <script type="text/javascript">
     createRect();
 </script>
@@ -161,5 +185,13 @@
         <rect x="0" y="0" width="200" height="200" fill="red" mask="url(#Mask)" />
     </svg>-->
     
+    <svg width="320" height="320" xmlns="http://www.w3.org/2000/svg">
+        
+        <text x="10" y="20" style="fill:red;">
+            Several lines:
+            <tspan x="10" y="45">First line.</tspan>
+            <tspan x="10" y="70">Second line.</tspan>
+        </text>
+    </svg>
 </body>
 </html>
