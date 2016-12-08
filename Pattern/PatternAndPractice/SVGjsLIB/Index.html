@@ -10,8 +10,9 @@
             svg.addAttr('width', 320);
             svg.addAttr('height', 320);
             svg.addAttr('viewBox', '0 0 320 320');
-            var g = createGroup(svg,45,50);
-            CreateTable(4,g);
+            var g = createGroup(svg, 45, 50);
+            processJsonToTable(g);
+            //CreateTable(4,g);
             //DisplayComponent(10, 10, 100, 100, svg);
 
 
@@ -131,16 +132,25 @@
             return text;
         }
 
-        function processJsonToTable() {
-            var d = { name: "pankaj", year: 1983 };
+        function processJsonToTable(svg) {
+            var data  = { name: "pankaj", year: 1983 };
             var x = 0;
             var y = 0;
             var wdth = 100;
             var rowHeight = 20;
             var tbl = createRectangle(0, 0, wdth, rowHeight * 1);
+           
+            var i = 0;
+            for (var key in data) {
+                if (data.hasOwnProperty(key)) {
+                    var value = data[key];
+                    if (typeof (value) == "object") { }
+                    else {
+                        addRow(x, i++ * rowHeight, 100, rowHeight,  key+":"+value, svg);
+                    }
+                }
+            } tbl.addAttr("height", rowHeight * i);
             svg.appendChild(tbl);
-
-
         }
     </script>
 </head>
@@ -184,7 +194,16 @@
         <rect x="0" y="0" width="200" height="200" fill="green" />
         <rect x="0" y="0" width="200" height="200" fill="red" mask="url(#Mask)" />
     </svg>-->
-    
+    <svg width="340" height="364">
+        <g transform="translate(5,5)" style="visibility: visible; cursor: move;">
+        <rect x="5" y="5" width="240" height="264" fill="#ffffff" stroke="#ff0303" pointer-events="all">
+            </rect>
+        <path d="M 4 50 L 245 50" fill="none" stroke="#ff0303" stroke-miterlimit="10" pointer-events="stroke"  stroke-width="1">
+            
+            </path>
+        <path d="M 5 5 L 50 56 L 79 77 L 66 77 Z" fill="none" stroke="#ff0303" stroke-miterlimit="10" pointer-events="all"></path>
+        </g>
+    </svg>
     <svg width="320" height="320" xmlns="http://www.w3.org/2000/svg">
         
         <text x="10" y="20" style="fill:red;">
