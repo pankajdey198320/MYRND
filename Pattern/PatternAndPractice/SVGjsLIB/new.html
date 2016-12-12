@@ -3,128 +3,219 @@
 <head>
     <title></title>
     <meta charset="utf-8" />
+    <script src="Scripts/Shapes/Shape.js"></script>
+    <script src="Scripts/Draw/Draw.js"></script>
     <script type="text/javascript">
+        //shapes
+        //class Shape {
+        //    constructor(object) {
+        //        this.position = new Position(0, 0);
+        //        this.name = 'Shape';
+        //        mapProperty(object, this);
+        //    }
 
-        class Shape {
-            constructor(object) {
-                this.position = new Position(0, 0);
-                this.name = 'Shape';
-                mapProperty(object, this);
-            }
+        //    get isShapeObject() {
+        //        return true;
+        //    }
+        //}
+        //class Rect extends Shape {
+        //    constructor(object) {
+        //        super(null);
+        //        this.height = 0;
+        //        this.width = 0;
+        //        mapProperty(object, this);
+        //        this.name = 'rect';
+        //    }
+        //}
+        //class Square extends Rect {
+        //    constructor(obj) {
+        //        super(obj);
+        //        this.height = this.width;
+        //        this.name = 'square';
+        //        console.log(this.position.x, this.position.y, this.name);
+        //    }
+        //}
+        //class Line extends Shape {
+        //    constructor(obj) {
+        //        super(null);
+        //        this.positionTo = new Position(0, 0);
 
-            get isShapeObject() {
-                return true;
-            }
-        }
-        class Rect extends Shape {
-            constructor(object) {
-                super(null);
-                this.height = 0;
-                this.width = 0;
-                mapProperty(object, this);
-            }
-        }
 
-        class Square extends Rect {
-            constructor(obj) {
-                super(obj);
-                this.height = this.width;
-                this.name = 'Square';
-                console.log(this.position.x, this.position.y, this.name);
-            }
-        }
-        class Position {
-            constructor(x, y) {
-                this.x = x; this.y = y;
+        //        mapProperty(obj, this);
+        //        this.name = 'line';
+        //    }
+        //}
+        //class Circle extends Shape {
+        //    constructor(obj) {
+        //        super(null);
+        //        this.radius = 0;
+        //        mapProperty(obj, this);
+        //        this.name = 'circle';
+        //    }
+        //}
+        //class Position {
+        //    constructor(x, y) {
+        //        this.x = x; this.y = y;
 
-            }
-        }
+        //    }
+        //}
+        //end shapes
         ///Mapping property from json object
-        function mapProperty(propertyArray, object) {
-            if (propertyArray == null)
-                return;
-            if (typeof (object) == "object") {
-                for (var key in object) {
-                    if (object.hasOwnProperty(key)) {
-                        if (typeof (object[key]) == 'object') {
-                            if (propertyArray[key] != undefined && typeof (propertyArray[key]) == 'object') {
-                                mapProperty(propertyArray[key], object[key]);
-                            }
-                        }
-                        else {
-                            object[key] = propertyArray[key];
-                        }
-                    }
-                }
-            }
-        }
+        
 
 
-        class DrawBase {
-            //constructor(shape) {
-            //    if (typeof (shape) != 'object') {
-            //        console.log('Doh! it \'s not objecy');
-            //        throw new DOMException();
-            //    }
-            //    else if (shape.isShapeObject == undefined || shape.isShapeObject != true) {
-            //        console.log('this is not valid shape')
-            //        throw new DOMException();
-            //    }
-            //    else {
-            //        this.Shape = shape;
-            //    }
-            //}
-            get isDrawObject() {
-                return true;
-            }
-            draw(svg,shape) { }
-        }
+        //class DrawBase {
+        //    //constructor(shape) {
+        //    //    if (typeof (shape) != 'object') {
+        //    //        console.log('Doh! it \'s not objecy');
+        //    //        throw new DOMException();
+        //    //    }
+        //    //    else if (shape.isShapeObject == undefined || shape.isShapeObject != true) {
+        //    //        console.log('this is not valid shape')
+        //    //        throw new DOMException();
+        //    //    }
+        //    //    else {
+        //    //        this.Shape = shape;
+        //    //    }
+        //    //}
+        //    get isDrawObject() {
+        //        return true;
+        //    }
+        //    draw(svg, shape) { }
+        //}
 
-        class SVGDraw extends DrawBase {
-            //constructor(shape) {
-            //    super(shape);
+        ///////Factory to create draw provider base on shape provided
+        //class DrawProviderFactory {
+        //    createDrawProvider(shape)// Should be shape type
+        //    {
+        //        if (shape.isShapeObject == undefined || shape.isShapeObject == false) {
+        //            throw DOMException();
+        //        }
+        //        switch (shape.name) {
+        //            case 'shape': {
+        //                return new DrawBase();
+        //            }
+        //            case 'line': {
+        //                return new drawLine();
+        //            }
+        //            case 'rect':
+        //            case 'square':
+        //                {
+        //                    return new drawRect();
+        //                } case 'circle': {
+        //                    return new drawCircle();
+        //                }
+        //            default: {
+        //                return new DrawBase();
+        //            }
+        //        }
+        //    }
+        //}
 
-            //}
+        //class SVGDraw extends DrawBase {
+        //    //constructor(shape) {
+        //    //    super(shape);
 
-            draw(svg,shape) {
-                if(svg == undefined || svg == null)
-                 svg = new HtmlDomElement('svg', "http://www.w3.org/2000/svg");
+        //    //}
+
+        //    draw(svg, shape) {
+        //        if (svg == undefined || svg == null)
+        //            svg = new HtmlDomElement('svg', "http://www.w3.org/2000/svg");
+        //        svg.addAttr('width', 320);
+        //        svg.addAttr('height', 320);
+
+        //        var rect = new HtmlDomElement('rect', "http://www.w3.org/2000/svg");
+        //        rect.addAttr('x', shape.position.x);
+        //        rect.addAttr('y', shape.position.y);
+        //        rect.addAttr('width', shape.width);
+        //        rect.addAttr('height', shape.height);
+
+        //        rect.addAttr('fill', '#95B3D7');
+
+        //        svg.appendChild(rect);
+        //        //document.body.appendChild(svg.elem);
+        //        return svg;
+        //    }
+
+        //}
+
+        //class drawLine extends DrawBase {
+        //    //<line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+        //    draw(svg, shape) {
+        //        if (shape.name != 'Line') {
+        //            throw new DOMException();
+        //        }
+        //        // svg = new HtmlDomElement('svg', "http://www.w3.org/2000/svg");
+        //        l1.addAttr('x1', shape.position.x);
+        //        l1.addAttr('y1', shape.position.y);
+        //        l1.addAttr('x2', shape.positionTo.x);
+        //        l1.addAttr('y2', shape.positionTo.y);
+        //        l1.addAttr('stroke-width', '2');
+        //        l1.addAttr('stroke', 'black');
+
+        //        svg.appendChild(l1);
+        //        // document.body.appendChild(svg.elem);
+        //        return svg;
+
+        //    }
+        //}
+
+        //class drawRect extends DrawBase {
+        //    draw(svg, shape) {
+        //        var rect = new HtmlDomElement('rect', "http://www.w3.org/2000/svg");
+        //        rect.addAttr('x', shape.position.x);
+        //        rect.addAttr('y', shape.position.y);
+        //        rect.addAttr('width', shape.width);
+        //        rect.addAttr('height', shape.height);
+
+        //        rect.addAttr('fill', '#95B3D7');
+
+        //        svg.appendChild(rect);
+        //    }
+        //}
+
+        //class drawCircle extends DrawBase {
+        //    draw(svg, shape) {
+        //        var cir = new HtmlDomElement('circle', "http://www.w3.org/2000/svg");
+        //        cir.addAttr('cx', shape.position.x);
+        //        cir.addAttr('cy', shape.position.y);
+               
+        //        cir.addAttr('r', shape.radius);
+                
+        //        cir.addAttr('fill', 'black');
+
+        //        svg.appendChild(cir);
+        //    }
+        //}
+
+        //function HtmlDomElement(tag, namespace) {
+        //    this.elem = namespace.length > 1
+        //        ? document.createElementNS("http://www.w3.org/2000/svg", tag)
+        //        : document.createElement(tag);
+        //    this.addAttr = function (key, value) {
+        //        var _atr = document.createAttribute(key);
+        //        _atr.value = value;
+        //        this.elem.setAttributeNode(_atr);
+        //    }
+        //    this.appendChild = function (e) {
+
+        //        this.elem.appendChild(e.elem);
+        //    }
+
+        //}
+
+        var svg;
+
+        class graphicsBase {
+            constructor() {
+                if (svg == undefined || svg == null)
+                    svg = new HtmlDomElement('svg', "http://www.w3.org/2000/svg");
                 svg.addAttr('width', 320);
                 svg.addAttr('height', 320);
 
-                var rect = new HtmlDomElement('rect', "http://www.w3.org/2000/svg");
-                rect.addAttr('x', shape.position.x);
-                rect.addAttr('y', shape.position.y);
-                rect.addAttr('width', shape.width);
-                rect.addAttr('height', shape.height);
-
-                rect.addAttr('fill', '#95B3D7');
-
-                svg.appendChild(rect);
                 document.body.appendChild(svg.elem);
-                return svg;
             }
-
-        }
-        function HtmlDomElement(tag, namespace) {
-            this.elem = namespace.length > 1
-                ? document.createElementNS("http://www.w3.org/2000/svg", tag)
-                : document.createElement(tag);
-            this.addAttr = function (key, value) {
-                var _atr = document.createAttribute(key);
-                _atr.value = value;
-                this.elem.setAttributeNode(_atr);
-            }
-            this.appendChild = function (e) {
-
-                this.elem.appendChild(e.elem);
-            }
-
-        }
-
-
-        class graphicsBase {
-            constructor(shape, drawBase) {
+            validateShape(shape) {
                 if (typeof (shape) != 'object') {
                     console.log('Doh! it \'s not objecy');
                     throw new DOMException();
@@ -134,51 +225,56 @@
                     throw new DOMException();
                 }
                 else {
-                    this.Shape = shape;
-                }
-
-                if (typeof (drawBase) != 'object') {
-                    console.log('Doh! it \'s not draw');
-                    throw new DOMException();
-                }
-                else if (drawBase.isDrawObject == undefined || drawBase.isDrawObject != true) {
-                    console.log('this is not valid draw provider')
-                    throw new DOMException();
-                }
-                else {
-                    this.Drawing = drawBase;
+                    this.shape = shape;
                 }
             }
 
+            create(shape) {
+
+                this.validateShape(shape);
+
+                this.Drawing = new DrawProviderFactory().createDrawProvider(this.shape);
+                return this;
+            }
             paint() {
-                this.Drawing.draw(null, this.Shape);
+                this.Drawing.draw(svg, this.shape);
+                return this;
             }
         }
 
     </script>
 </head>
 <body>
-    <!--<svg width="120" height="120"
-             viewBox="120 120 120 120"
-             xmlns="http://www.w3.org/2000/svg">
 
-
-        <circle cx="50" cy="50" r="5" stroke="black" stroke-width="0" fill="bkack"></circle>
-    </svg>-->
     <script type="text/javascript">
         var x = new Square({ name: 'Rect', position: { x: 10, y: 24 }, width: 60, height: 90 });
         var y = new Rect({ name: 'Rect', position: { x: 10, y: 90 }, width: 60, height: 90 });
 
-        
-        var dx = new SVGDraw(x);
-        var gx= new graphicsBase(y, dx);
-        gx.paint();
-       //var xvg = dx.draw();
-       // var dy = new SVGDraw(y);
-       // dy.draw(xvg);
+        var circle = new Circle({ position: { x: 10, y: 90 }, radius: 5 });
+        var gr = new graphicsBase();
+        gr.create(x).paint()
+        .create(y).paint()
+        .create(circle).paint();
+
+
+        var poly = new PolyLine({ position: { x: 10, y: 10 }, poinints: [{ x: 20, y: 20 }, { x: 50, y: 30 }] });
+        // var l3 = new Line({ positionTo: { x: 200, y: 200 } });
+        // var dx = new SVGDraw(x);
+        // var lx = new drawLine();
+        // var gy = new graphicsBase(l3, lx);
+        // var gx = new graphicsBase(y, dx);
+        // gy.paint();
+        ////var xvg = dx.draw();
+        //// var dy = new SVGDraw(y);
+        //// dy.draw(xvg);
     </script>
 
-    
-    
+    <svg width="120" height="120" viewBox="0 0 120 120"
+         xmlns="http://www.w3.org/2000/svg">
+
+        <line x1="20" y1="100" x2="100" y2="20"
+              stroke-width="2" stroke="black" />
+    </svg>
+
 </body>
 </html>
