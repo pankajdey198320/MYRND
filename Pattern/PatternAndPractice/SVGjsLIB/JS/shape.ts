@@ -60,6 +60,50 @@ class ScreenCoordinate {
     }
 
 }
+class Line extends Shape {
+    
+    private _positionTo : ScreenCoordinate;
+    public get positionTo() : ScreenCoordinate {
+        return this._positionTo;
+    }
+    public set positionTo(v : ScreenCoordinate) {
+        this._positionTo = v;
+    }
+    
+    constructor() {
+        super();
+        this.positionTo = new ScreenCoordinate();
+    }
+}
+class Circle extends Shape {
+    
+    private _radius : number;
+    public get radius() : number {
+        return this._radius;
+    }
+    public set radius(v : number) {
+        this._radius = v;
+    }
+    
+    constructor() {
+        super();
+        this.radius = 0;
+    }
+}
 
+class PolyLine extends Shape {
+    
+    private _points : ScreenCoordinate[]=[];
+    public get points() : ScreenCoordinate[] {
+        return this._points;
+    }
+    public set points(v : ScreenCoordinate[]) {
+        this._points = v;
+    }
+    
+    constructor() {
+        super();
+    }
+}
 
-export { Shape,Square,Rect,ScreenCoordinate };
+export { Shape,Square,Rect,ScreenCoordinate,PolyLine,Circle,Line };
