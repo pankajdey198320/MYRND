@@ -1,21 +1,6 @@
 import { SHAPE_NAME_GLOBAL } from './exportd.def';
 class Shape {
 
-    private _width: number;
-    public get width(): number {
-        return this._width;
-    }
-    public set width(v: number) {
-        this._width = v;
-    }
-
-    private _height: number;
-    public get height(): number {
-        return this._height;
-    }
-    public set height(v: number) {
-        this._height = v;
-    }
 
 
     private _position: ScreenCoordinate;
@@ -39,6 +24,27 @@ class Shape {
 }
 
 class Rect extends Shape {
+    private _width: number;
+    public get width(): number {
+        if (this.name == SHAPE_NAME_GLOBAL.Square)
+            return this._height;
+        else if (this.name == SHAPE_NAME_GLOBAL.Rect)
+            return this._width;
+        else
+            return 0;
+    }
+    public set width(v: number) {
+        this._width = v;
+    }
+
+    private _height: number;
+    public get height(): number {
+        return this._height;
+    }
+    public set height(v: number) {
+        this._height = v;
+    }
+
     constructor() {
         super();
         this.height = 0;
@@ -49,11 +55,15 @@ class Rect extends Shape {
 class Square extends Rect {
     constructor() {
         super();
-        this.height = this.width;
+        // this.height = this.width;
         // console.log(this.position.x, this.position.y, this.name);
 
         this.name = SHAPE_NAME_GLOBAL.Square;
     }
+
+    // get width() {
+    //     return this.height;
+    // }
 }
 
 class ScreenCoordinate {
@@ -72,6 +82,10 @@ class ScreenCoordinate {
     }
     public set y(v: number) {
         this._y = v;
+    }
+    constructor(a: number = 0, b: number = 0) {
+        this._x = a;
+        this._y = b;
     }
 
 }
@@ -120,7 +134,7 @@ class PolyLine extends Shape {
 
     constructor() {
         super();
-        this.name =SHAPE_NAME_GLOBAL.Poly;
+        this.name = SHAPE_NAME_GLOBAL.Poly;
     }
 }
 
