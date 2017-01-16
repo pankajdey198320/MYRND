@@ -38,3 +38,6 @@ C:\Projects\me\MyRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\Newtonsoft
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\ConsoleTest\obj\Debug\ConsoleTest.csprojResolveAssemblyReference.cache
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\ConsoleTest\obj\Debug\ConsoleTest.exe
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\ConsoleTest\obj\Debug\ConsoleTest.pdb
+E:\PROJECTS\MyRnD\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\ConsoleTest.exe.config
+E:\PROJECTS\MyRnD\Pattern\PatternAndPractice\ConsoleTest\obj\Debug\ConsoleTest.exe
+E:\PROJECTS\MyRnD\Pattern\PatternAndPractice\ConsoleTest\obj\Debug\ConsoleTest.pdb

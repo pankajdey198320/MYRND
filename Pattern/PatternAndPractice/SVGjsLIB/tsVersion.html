@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+   <script src="node_modules/systemjs/dist/system.js"></script>
+     <script src='node_modules/typescript/lib/typescript.js'></script>
+
+</head>
+<body>
+ <script>
+       
+        System.config({
+        transpiler: 'typescript',
+        packages: {
+          js: {
+            defaultExtension: 'ts'
+          }
+        } 
+      });
+        System.import('js/index').then(function(m) {
+            
+           
+        });
+    </script>
+    
+    
+</body>
+</html>

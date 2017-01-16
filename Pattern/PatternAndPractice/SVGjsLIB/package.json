@@ -1,0 +1,17 @@
+{
+  "name": "svglib",
+  "version": "1.0.0",
+  "description": "library for svg",
+  "main": "index.js",
+  "dependencies": {
+    "systemjs": "^0.19.41"
+  },
+  "devDependencies": {
+    "typescript": "^2.1.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
