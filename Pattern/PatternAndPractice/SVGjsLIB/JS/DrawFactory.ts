@@ -1,22 +1,21 @@
-import { Drawing, SVGDraw, drawLine, drawRect, drawCircle } from './exportd.def';
+import { Drawing, SVGDraw, drawLine, drawRect, drawCircle, SHAPE_NAME_GLOBAL } from './exportd.def';
 class DrawProviderFactory {
     createDrawProvider(shape)// Should be shape type
     {
 
         switch (shape.name) {
-            case 'shape': {
+            case SHAPE_NAME_GLOBAL.Base: {
                 return new SVGDraw();
             }
-            case 'line': {
+            case SHAPE_NAME_GLOBAL.Line: {
                 return new drawLine();
             }
-            case 'rect':
-            case 'square':
-                {
-                    return new drawRect();
-                } case 'circle': {
-                    return new drawCircle();
-                }
+            case SHAPE_NAME_GLOBAL.Rect:
+            case SHAPE_NAME_GLOBAL.Square: {
+                return new drawRect();
+            } case SHAPE_NAME_GLOBAL.Circle: {
+                return new drawCircle();
+            }
             default: {
                 return new SVGDraw();
             }
