@@ -1,4 +1,4 @@
-import { Drawing, SVGDraw, drawLine, drawRect, drawCircle, SHAPE_NAME_GLOBAL } from './exportd.def';
+import { Drawing, SVGDraw, drawLine, drawRect, drawCircle, SHAPE_NAME_GLOBAL,drawPoly } from './exportd.def';
 class DrawProviderFactory {
     createDrawProvider(shape)// Should be shape type
     {
@@ -15,6 +15,9 @@ class DrawProviderFactory {
                 return new drawRect();
             } case SHAPE_NAME_GLOBAL.Circle: {
                 return new drawCircle();
+            }
+            case SHAPE_NAME_GLOBAL.Poly: {
+                return new drawPoly();
             }
             default: {
                 return new SVGDraw();

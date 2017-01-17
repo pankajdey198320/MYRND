@@ -1,6 +1,5 @@
 
-import { Shape } from './shape';
-import { SvgComponent } from './helper';
+import { Shape, SvgComponent, ScreenCoordinate } from './exportd.def';
 interface Drawing {
     draw(svg: SvgComponent, shape: Shape);
 }
@@ -72,4 +71,19 @@ class drawCircle implements Drawing {
     }
 }
 
-export { Drawing, SVGDraw, drawLine, drawRect, drawCircle };
+class drawPoly implements Drawing {
+    draw(svg, shape) {
+        let poly = new SvgComponent('polygon');
+        let pt: ScreenCoordinate[] = shape.points;
+        let pointString: string = '';
+        for (let obj of pt) {
+            pointString += `${obj.x},${obj.y} `;
+        }
+
+        poly.addAttr('points', pointString);
+        svg.appendChild(poly);
+
+    }
+}
+
+export { Drawing, SVGDraw, drawLine, drawRect, drawCircle,drawPoly };

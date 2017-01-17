@@ -1,4 +1,4 @@
-import { SHAPE_NAME_GLOBAL } from './exportd.def';
+import { SHAPE_NAME_GLOBAL,ScreenCoordinate } from './exportd.def';
 class Shape {
 
 
@@ -66,29 +66,7 @@ class Square extends Rect {
     // }
 }
 
-class ScreenCoordinate {
 
-    private _x: number;
-    public get x(): number {
-        return this._x;
-    }
-    public set x(v: number) {
-        this._x = v;
-    }
-
-    private _y: number;
-    public get y(): number {
-        return this._y;
-    }
-    public set y(v: number) {
-        this._y = v;
-    }
-    constructor(a: number = 0, b: number = 0) {
-        this._x = a;
-        this._y = b;
-    }
-
-}
 class Line extends Shape {
 
     private _positionTo: ScreenCoordinate;
@@ -138,4 +116,4 @@ class PolyLine extends Shape {
     }
 }
 
-export { Shape, Square, Rect, ScreenCoordinate, PolyLine, Circle, Line };
+export { Shape, Square, Rect, ScreenCoordinate, PolyLine, Circle, Line };   
