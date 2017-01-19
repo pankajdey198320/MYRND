@@ -112,7 +112,7 @@ class PolyLine extends Shape {
 
     constructor() {
         super();
-        this.name = SHAPE_NAME_GLOBAL.Poly;
+        this.name = SHAPE_NAME_GLOBAL.PolyLine;
     }
 }
 

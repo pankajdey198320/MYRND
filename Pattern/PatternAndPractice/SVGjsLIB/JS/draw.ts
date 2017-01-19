@@ -28,7 +28,7 @@ class drawLine implements Drawing {
     //<line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
     draw(svg, shape) {
 
-        let l1 = new SvgComponent('svg');
+        let l1 = new SvgComponent('line');
         l1.addAttr('x1', shape.position.x);
         l1.addAttr('y1', shape.position.y);
         l1.addAttr('x2', shape.positionTo.x);
@@ -71,7 +71,21 @@ class drawCircle implements Drawing {
     }
 }
 
-class drawPoly implements Drawing {
+class drawPolyLine implements Drawing {
+    draw(svg, shape) {
+        let poly = new SvgComponent('polyline');
+        let pt: ScreenCoordinate[] = shape.points;
+        let pointString: string = '';
+        for (let obj of pt) {
+            pointString += `${obj.x},${obj.y} `;
+        }
+
+        poly.addAttr('points', pointString);
+        svg.appendChild(poly);
+
+    }
+}
+class drawPolygon implements Drawing {
     draw(svg, shape) {
         let poly = new SvgComponent('polygon');
         let pt: ScreenCoordinate[] = shape.points;
@@ -86,4 +100,4 @@ class drawPoly implements Drawing {
     }
 }
 
-export { Drawing, SVGDraw, drawLine, drawRect, drawCircle,drawPoly };
+export { Drawing, SVGDraw, drawLine, drawRect, drawCircle,drawPolygon,drawPolyLine };
