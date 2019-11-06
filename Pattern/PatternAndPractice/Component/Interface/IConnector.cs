@@ -12,5 +12,8 @@ namespace Component.Interface
         void SetTarget(Action<IMessageContext> target);
         void InvokeTarget(IMessageContext context);
         void AddConditionLogic(string leftOperator, string rightOperator, Operator operat);
+        ComponentConfiguration ComponentConfig { get; set; }
+        IList<IComponent<IMessageContext>> NextComponents { get;  set; }
+
     }
 }

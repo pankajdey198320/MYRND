@@ -1,3 +1,11 @@
 ﻿PortableStudentsManager/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 PortableStudentsManager/bin/PortableStudentsManager.dll
 Pattern/PatternAndPractice/SVGjsLIB/node_modules/
+/Pattern/PatternAndPractice/AbstructOrInterface/bin/**/*
+/Pattern/PatternAndPractice/AbstructOrInterface/bin/Debug/**
+/Pattern/PatternAndPractice/ComPoint/obj/**/
+/**/Debug/**/*
+/Pattern/PatternAndPractice/AbstructOrInterface/bin/Debug/AbstructOrInterface.exe
+/Pattern/PatternAndPractice/AbstructOrInterface/bin/Debug/AbstructOrInterface.exe.config
+/Pattern/PatternAndPractice/AbstructOrInterface/bin/Debug/AbstructOrInterface.pdb
+/Pattern/PatternAndPractice/AbstructOrInterface/obj/Debug/AbstructOrInterface.pdb

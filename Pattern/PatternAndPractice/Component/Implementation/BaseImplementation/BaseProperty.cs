@@ -11,7 +11,7 @@ namespace Component.Implementation.BaseImplementation
         public BaseProperties()
         {
 
-            var c = JsonConvert.DeserializeObject<Dictionary<string,string>>(System.IO.File.ReadAllText(@"C:\Projects\me\MyRND\Pattern\PatternAndPractice\ConsoleTest\BasicProperties.json"));
+            var c = JsonConvert.DeserializeObject<Dictionary<string,string>>(System.IO.File.ReadAllText(@"BasicProperties.json"));
             foreach (var i in c)
             {
                 Add(i.Key,i.Value);

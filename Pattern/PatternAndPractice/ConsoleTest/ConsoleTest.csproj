@@ -47,8 +47,12 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="SampleService - Copy.json" />
-    <None Include="SampleService.json" />
-    <None Include="BasicProperties.json" />
+    <None Include="SampleService.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="BasicProperties.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ComPoint\ComPoint.csproj">

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Component.Interface;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,8 @@ namespace Service
 {
     public interface IService
     {
-        void Start();
+        void Start(Action<IMessageContext> onSuccess, Action<IMessageContext> onFailure);
+        void Stop();
+        
     }
 }

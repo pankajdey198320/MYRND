@@ -52,6 +52,7 @@
     <Compile Include="Implementation\Common\MimeType.cs" />
     <Compile Include="Implementation\LogicComponent\StartComponent.cs" />
     <Compile Include="Interface\IComponent.cs" />
+    <Compile Include="Interface\IComponentFactory.cs" />
     <Compile Include="Interface\IConnector.cs" />
     <Compile Include="Interface\IMessageContext.cs" />
     <Compile Include="MessageContext\BaseMessageContext.cs" />

@@ -55,9 +55,16 @@ namespace Component
 
         public bool InvokeNextComponent(T obj)
         {
+            int count = 0;
             foreach (var connector in this.Connectors)
             {
-                connector.InvokeTarget(obj);
+                Task.Run(() => {
+                    System.Threading.Thread.CurrentThread.IsBackground = true;
+                    obj.Message += count++;
+                    connector.InvokeTarget(obj);
+                   
+                });
+              //  connector.InvokeTarget(obj);
             }
             return true;
         }

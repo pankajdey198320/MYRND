@@ -14,74 +14,63 @@ using Newtonsoft.Json;
 using ComPoint.ComImplementation.TimerComp;
 namespace Service
 {
-    public class ComPointService : IService
+    public class ExecutionService : IService
     {
 
         IComponent<IMessageContext> _begin;
 
 
-        public ComPointService()
+        public ExecutionService(IConfigurationService configService, IComponentFactory componentFactory,IConnectorFactory connectorFactory)
         {
-            
-            var c = JsonConvert.DeserializeObject<ComponentConfiguration>(System.IO.File.ReadAllText(@"C:\Projects\me\MyRND\Pattern\PatternAndPractice\ConsoleTest\SampleService.json"));
-            _begin = c.Comp;
-            }
-        public void Start()
-        {
-            _begin.SartComponent(new BaseMessageContext()
-            {
-                Message = "pass of siberia"
-            });
+
+            var c = configService.LoadComponentConfiguration();
+            _begin = componentFactory.CreateComponent(c, connectorFactory);// c.Comp;
         }
+
+
+        public void Start(Action<IMessageContext> onSuccess, Action<IMessageContext> onFailure)
+        {
+            try
+            {
+                _begin.SartComponent(new BaseMessageContext()
+                {
+                    Message = "pass of siberia"
+                });
+                ExecuteFunc(onFailure, new BaseMessageContext() { Message = "Component service started" });
+            }
+            catch
+            {
+                ExecuteFunc(onFailure, new BaseMessageContext() { Message = "Component fault" });
+            }
+        }
+
+        public void Stop()
+        {
+            throw new NotImplementedException();
+        }
+
+
+        #region private methods
+        private void ExecuteFunc<IMessageContext>(Action<IMessageContext> dele, IMessageContext msg)
+        {
+            if (dele != null)
+            {
+                dele(msg);
+            }
+        }
+        #endregion
+    }
+    public interface IConfigurationService
+    {
+        ComponentConfiguration LoadComponentConfiguration();
     }
 
-   
-    public class ComponentConfiguration
+    public class JsonFileConfigurationService : IConfigurationService
     {
-        public IComponent<IMessageContext> Comp
+        public ComponentConfiguration LoadComponentConfiguration()
         {
-            get
-            {
-
-                if (!string.IsNullOrEmpty(ComponentName))
-                {
-                    var t = System.AppDomain.CurrentDomain.GetAssemblies().SelectMany(x => x.GetTypes()).First(x => x.Name == ComponentName);
-                    // return c as IComponent<IMessageContext>;
-                    List<IConnector> xx = null;
-                    if (Connectors != null)
-                    {
-                        xx = new List<IConnector>();
-                        foreach (var c in Connectors)
-                        {
-                            xx.Add(c.Comt);
-                        }
-                    }
-                    return Activator.CreateInstance(t, new object[] { xx }) as IComponent<IMessageContext>;
-                }
-                return null;
-            }
+            var componentConfiguration = JsonConvert.DeserializeObject<ComponentConfiguration>(System.IO.File.ReadAllText(@"SampleService.json"));
+            return componentConfiguration;
         }
-        public string ComponentName { get; set; }
-        public List<ConnectorConfiguration> Connectors { get; set; }
-
-    }
-
-    public class ConnectorConfiguration
-    {
-        public IConnector Comt
-        {
-            get
-            {
-
-                if (!string.IsNullOrEmpty(Connector))
-                {
-                    var t = System.AppDomain.CurrentDomain.GetAssemblies().SelectMany(x => x.GetTypes()).First(x => x.Name == Connector);
-                    return Activator.CreateInstance(t, new object[] { Component.Comp }) as IConnector;
-                }
-                return null;
-            }
-        }
-        public string Connector { get; set; }
-        public ComponentConfiguration Component { get; set; }
     }
 }
