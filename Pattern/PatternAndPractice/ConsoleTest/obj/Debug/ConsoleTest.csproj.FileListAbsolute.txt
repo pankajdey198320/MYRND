@@ -41,3 +41,24 @@ C:\Projects\me\MyRND\Pattern\PatternAndPractice\ConsoleTest\obj\Debug\ConsoleTes
 E:\PROJECTS\MyRnD\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\ConsoleTest.exe.config
 E:\PROJECTS\MyRnD\Pattern\PatternAndPractice\ConsoleTest\obj\Debug\ConsoleTest.exe
 E:\PROJECTS\MyRnD\Pattern\PatternAndPractice\ConsoleTest\obj\Debug\ConsoleTest.pdb
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\SampleService.json
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\BasicProperties.json
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\ConsoleTest.exe.config
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\ConsoleTest.exe
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\ConsoleTest.pdb
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\ComPoint.dll
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\Component.dll
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\Service.dll
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\Newtonsoft.Json.dll
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\ComPoint.pdb
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\Component.pdb
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\Service.pdb
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\Newtonsoft.Json.xml
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ConsoleTest\obj\Debug\ConsoleTest.csprojAssemblyReference.cache
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ConsoleTest\obj\Debug\ConsoleTest.csproj.CoreCompileInputs.cache
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ConsoleTest\obj\Debug\ConsoleTest.csproj.CopyComplete
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ConsoleTest\obj\Debug\ConsoleTest.exe
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ConsoleTest\obj\Debug\ConsoleTest.pdb
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\SampleService - Copy.json
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\SampleService - Copy (2).json
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ConsoleTest\bin\Debug\SampleService - Copy (3).json

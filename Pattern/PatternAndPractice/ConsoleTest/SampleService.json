@@ -1,23 +1,70 @@
 ﻿{
-  "ComponentName": "HttpServer",
+  "ComponentName": "SimpleTimer",
   "AsmToLoad": "compoint",
+  "Properties": {
+    "description": "",
+    "name": "",
+    "Interval": "1000"
+  },
+
   "Connectors": [
     {
       "Connector": "ForwardConnector",
       "Component": {
-        "ComponentName": "FormatatedDispayComponent",
-        "AsmToLoad": "Component",
+        "ComponentName": "BaseApiCommunicator",
+        "AsmToLoad": "compoint",
+        "Properties": {
+          "BaseUrl": "https://jsonplaceholder.typicode.com/",
+          "Url": "todos/1"
+        },
         "Connectors": [
           {
             "Connector": "ForwardConnector",
             "Component": {
-              "ComponentName": "EndComponent",
-              "AsmToLoad": "Component"
+              "ComponentName": "FormatatedDispayComponent",
+              "AsmToLoad": "Component",
+              "Connectors": [
+                {
+                  "Connector": "ForwardConnector",
+                  "Component": {
+                    "ComponentName": "EndComponent",
+                    "AsmToLoad": "Component"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Connector": "ForwardConnector",
+      "Component": {
+        "ComponentName": "BaseApiCommunicator",
+        "AsmToLoad": "compoint",
+        "Properties": {
+          "BaseUrl": "https://reqres.in/api/",
+          "Url": "users?page=2"
+        },
+        "Connectors": [
+          {
+            "Connector": "ForwardConnector",
+            "Component": {
+              "ComponentName": "FormatatedDispayComponent",
+              "AsmToLoad": "Component",
+              "Connectors": [
+                {
+                  "Connector": "ForwardConnector",
+                  "Component": {
+                    "ComponentName": "EndComponent",
+                    "AsmToLoad": "Component"
+                  }
+                }
+              ]
             }
           }
         ]
       }
     }
-   
   ]
 }

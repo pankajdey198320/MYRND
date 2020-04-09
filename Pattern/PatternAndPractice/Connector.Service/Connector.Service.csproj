@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\EndPoint.csproj" />
+    <ProjectReference Include="..\Connector.Component\Connector.Component.csproj" />
+  </ItemGroup>
+
+</Project>

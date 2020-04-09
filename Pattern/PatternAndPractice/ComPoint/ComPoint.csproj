@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComImplementation\ApiEndpoint\BaseApiCommunicator.cs" />
     <Compile Include="ComImplementation\HttpServer.cs" />
     <Compile Include="ComImplementation\Tcp\TcpServerCompoint.cs" />
     <Compile Include="ComImplementation\Timer\SimpleTimer.cs" />

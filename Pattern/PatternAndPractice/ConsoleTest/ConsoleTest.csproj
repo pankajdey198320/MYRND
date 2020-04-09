@@ -46,7 +46,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="SampleService - Copy.json" />
+    <None Include="SampleService - Copy %282%29.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="SampleService - Copy %283%29.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="SampleService - Copy.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="SampleService.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

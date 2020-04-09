@@ -29,3 +29,16 @@ C:\Projects\me\MyRND\Pattern\PatternAndPractice\Service\bin\Debug\Newtonsoft.Jso
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\Service\obj\Debug\Service.dll
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\Service\obj\Debug\Service.pdb
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\Service\bin\Debug\Service.dll
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\Service\bin\Debug\Service.pdb
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\Service\bin\Debug\ComPoint.dll
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\Service\bin\Debug\Component.dll
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\Service\bin\Debug\Newtonsoft.Json.dll
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\Service\bin\Debug\ComPoint.pdb
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\Service\bin\Debug\Component.pdb
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\Service\bin\Debug\Newtonsoft.Json.xml
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\Service\obj\Debug\Service.csprojAssemblyReference.cache
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\Service\obj\Debug\Service.csproj.CopyComplete
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\Service\obj\Debug\Service.dll
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\Service\obj\Debug\Service.pdb

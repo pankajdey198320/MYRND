@@ -16,3 +16,12 @@ C:\Projects\me\MyRND\Pattern\PatternAndPractice\Component\bin\Debug\Newtonsoft.J
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\Component\obj\Debug\Component.csprojResolveAssemblyReference.cache
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\Component\obj\Debug\Component.dll
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\Component\obj\Debug\Component.pdb
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\Component\bin\Debug\Component.dll
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\Component\bin\Debug\Component.pdb
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\Component\bin\Debug\Newtonsoft.Json.dll
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\Component\bin\Debug\Newtonsoft.Json.xml
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\Component\obj\Debug\Component.csprojAssemblyReference.cache
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\Component\obj\Debug\Component.csproj.CoreCompileInputs.cache
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\Component\obj\Debug\Component.csproj.CopyComplete
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\Component\obj\Debug\Component.dll
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\Component\obj\Debug\Component.pdb
