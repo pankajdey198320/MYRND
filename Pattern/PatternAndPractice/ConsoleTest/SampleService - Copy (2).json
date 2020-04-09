@@ -1,0 +1,23 @@
+﻿{
+  "ComponentName": "HttpServer",
+  "AsmToLoad": "compoint",
+  "Connectors": [
+    {
+      "Connector": "ForwardConnector",
+      "Component": {
+        "ComponentName": "FormatatedDispayComponent",
+        "AsmToLoad": "Component",
+        "Connectors": [
+          {
+            "Connector": "ForwardConnector",
+            "Component": {
+              "ComponentName": "EndComponent",
+              "AsmToLoad": "Component"
+            }
+          }
+        ]
+      }
+    }
+   
+  ]
+}

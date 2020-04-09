@@ -5,12 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Component.Interface;
 using Component.Implementation.BaseImplementation;
+using System.Threading;
 
 namespace Component
 {
     public abstract class BaseComponent<T> : IComponent<T> where T : IMessageContext
     {
-        public BaseComponent( )
+        public BaseComponent()
         {
             this.Connectors = new List<IConnector>();
             this.Properties = new Dictionary<string, string>();
@@ -58,18 +59,23 @@ namespace Component
             int count = 0;
             foreach (var connector in this.Connectors)
             {
-                Task.Run(() => {
+                // Task.Run(() => {
+
+                Thread t = new Thread(new ParameterizedThreadStart((o) =>
+                {
                     System.Threading.Thread.CurrentThread.IsBackground = true;
                     obj.Message += count++;
-                    connector.InvokeTarget(obj);
-                   
-                });
-              //  connector.InvokeTarget(obj);
+                    connector.InvokeTarget(o as IMessageContext);
+                }));
+                t.Start(obj);
+                // });
+                //  connector.InvokeTarget(obj);
             }
             return true;
         }
 
-        public virtual void SartComponent(T obj) {
+        public virtual void SartComponent(T obj)
+        {
 
             this.InvokeNextComponent(obj);
         }

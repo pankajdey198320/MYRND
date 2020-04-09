@@ -23,3 +23,14 @@ C:\Projects\me\MyRND\Pattern\PatternAndPractice\ComPoint\bin\Debug\Newtonsoft.Js
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\ComPoint\obj\Debug\ComPoint.csprojResolveAssemblyReference.cache
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\ComPoint\obj\Debug\ComPoint.dll
 C:\Projects\me\MyRND\Pattern\PatternAndPractice\ComPoint\obj\Debug\ComPoint.pdb
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ComPoint\bin\Debug\ComPoint.dll
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ComPoint\bin\Debug\ComPoint.pdb
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ComPoint\bin\Debug\Component.dll
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ComPoint\bin\Debug\Newtonsoft.Json.dll
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ComPoint\bin\Debug\Component.pdb
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ComPoint\bin\Debug\Newtonsoft.Json.xml
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ComPoint\obj\Debug\ComPoint.csprojAssemblyReference.cache
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ComPoint\obj\Debug\ComPoint.csproj.CoreCompileInputs.cache
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ComPoint\obj\Debug\ComPoint.csproj.CopyComplete
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ComPoint\obj\Debug\ComPoint.dll
+C:\Git\myProj\MYRND\Pattern\PatternAndPractice\ComPoint\obj\Debug\ComPoint.pdb

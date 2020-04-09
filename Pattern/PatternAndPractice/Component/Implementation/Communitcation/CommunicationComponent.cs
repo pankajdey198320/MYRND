@@ -13,12 +13,12 @@ namespace Component.Implementation
     {
         public CommunicationComponentBase()
         {
-            Properties = new CommunicationProperties();
+           // Properties = new CommunicationProperties();
         }
 
         public CommunicationComponentBase(List<IConnector> connectors):base(connectors)
         {
-            Properties = new CommunicationProperties();
+          //  Properties = new CommunicationProperties();
         }
         public CommunicationComponentType Type { get; set; }
         public MimeType MimeType { get; set; }

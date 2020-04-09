@@ -23,9 +23,10 @@ namespace ComPoint.ComImplementation.TimerComp
             }
             _timr.Elapsed += _timr_Elapsed;
         }
-        public SimpleTimer(List<IConnector> connectors) : base(connectors)
+        public SimpleTimer(List<IConnector> connectors,Dictionary<string,string> property) : base(connectors)
         {
             base.IsStart = true;
+            Properties = property;
             double interval = 0;
             if (double.TryParse(Properties["Interval"], out interval))
             {
@@ -44,6 +45,7 @@ namespace ComPoint.ComImplementation.TimerComp
 
         public override void SartComponent(IMessageContext obj)
         {
+           
             _timr.Start();
         }
     }

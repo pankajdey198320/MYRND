@@ -10,3 +10,9 @@ C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\CodeTests\CodetTests\PlayWith
 C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\CodeTests\CodetTests\PlayWithCollection\bin\Debug\PlayWithCollection.exe
 C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\CodeTests\CodetTests\PlayWithCollection\bin\Debug\PlayWithCollection.pdb
 C:\Projects\me\MYRND-Tools_build\MYRND-Tools_build\CodeTests\CodetTests\PlayWithCollection\obj\Debug\PlayWithCollection.csprojResolveAssemblyReference.cache
+C:\Git\myProj\MYRND\CodeTests\CodetTests\PlayWithCollection\bin\Debug\PlayWithCollection.exe.config
+C:\Git\myProj\MYRND\CodeTests\CodetTests\PlayWithCollection\bin\Debug\PlayWithCollection.exe
+C:\Git\myProj\MYRND\CodeTests\CodetTests\PlayWithCollection\bin\Debug\PlayWithCollection.pdb
+C:\Git\myProj\MYRND\CodeTests\CodetTests\PlayWithCollection\obj\Debug\PlayWithCollection.csproj.CoreCompileInputs.cache
+C:\Git\myProj\MYRND\CodeTests\CodetTests\PlayWithCollection\obj\Debug\PlayWithCollection.exe
+C:\Git\myProj\MYRND\CodeTests\CodetTests\PlayWithCollection\obj\Debug\PlayWithCollection.pdb

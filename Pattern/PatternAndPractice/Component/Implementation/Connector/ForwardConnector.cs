@@ -11,6 +11,7 @@ namespace Component.Implementation
     public class ForwardConnector : IConnector
     {
         private Action<IMessageContext> _target;
+        private static string obj = "dsa";
 
         public Conditions ConnectLogic { get; private set; }
         public ComponentConfiguration ComponentConfig { get; set; }
@@ -35,18 +36,25 @@ namespace Component.Implementation
 
         public void InvokeTarget(IMessageContext context)
         {
-            if (NextComponents.Count() <= 0)
-                NextComponents.Add(new BasicComponentFactory().CreateComponent(ComponentConfig, new BasicConnectorFactory()));
-               
-            int count = 0;
-            foreach(var comp in NextComponents)
+            lock (obj)
             {
-                comp.SartComponent(context);
-                //Task.Run(() => {
-                //    System.Threading.Thread.CurrentThread.IsBackground = true;
-                //    context.Message += count++;
-                //    comp.SartComponent(context);
-                //});
+                if (NextComponents.Count() <= 0)
+                {
+
+                    NextComponents.Add(new BasicComponentFactory().CreateComponent(ComponentConfig, new BasicConnectorFactory()));
+                }
+
+
+                int count = 0;
+                foreach (var comp in NextComponents)
+                {
+                    comp.SartComponent(context);
+                    //Task.Run(() => {
+                    //    System.Threading.Thread.CurrentThread.IsBackground = true;
+                    //    context.Message += count++;
+                    //    comp.SartComponent(context);
+                    //});
+                }
             }
             //if (this.ConnectLogic.IsTrue() || this.ConnectLogic.Count == 0)
             //    this._target.Invoke(context);
