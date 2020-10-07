@@ -19,9 +19,12 @@ namespace Component.MessageContext
             }
         }
 
+        public string ID { get; set ; }
+
         public BaseMessageContext()
         {
             _Message = string.Empty;
+            ID = Guid.NewGuid().ToString();
         }
         public string GetPropertyvalye(string propertyName)
         {

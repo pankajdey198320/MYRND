@@ -8,6 +8,7 @@ namespace Component.Interface
 {
     public interface IMessageContext
     {
+        string ID { get; set; }
         string Message { get; set; }
         string GetPropertyvalye(string propertyName);
     }

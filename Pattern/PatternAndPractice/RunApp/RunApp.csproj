@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Connector.Component\Connector.Component.csproj" />
+    <ProjectReference Include="..\Connector.Service\Connector.Service.csproj" />
+    <ProjectReference Include="..\ClassLibrary1\EndPoint.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="SampleService.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

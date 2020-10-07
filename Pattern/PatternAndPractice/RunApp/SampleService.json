@@ -1,0 +1,70 @@
+﻿{
+  "ComponentName": "SimpleTimer",
+  "AsmToLoad": "EndPoint",
+  "Properties": {
+    "description": "",
+    "name": "",
+    "Interval": "1000"
+  },
+
+  "Connectors": [
+    {
+      "Connector": "ForwardConnector",
+      "Component": {
+        "ComponentName": "BaseApiCommunicator",
+        "AsmToLoad": "EndPoint",
+        "Properties": {
+          "BaseUrl": "https://jsonplaceholder.typicode.com/",
+          "Url": "todos/1"
+        },
+        "Connectors": [
+          {
+            "Connector": "ForwardConnector",
+            "Component": {
+              "ComponentName": "FormatatedDispayComponent",
+              "AsmToLoad": "Connector.Component",
+              "Connectors": [
+                {
+                  "Connector": "ForwardConnector",
+                  "Component": {
+                    "ComponentName": "EndComponent",
+                    "AsmToLoad": "Connector.Component"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Connector": "ForwardConnector",
+      "Component": {
+        "ComponentName": "BaseApiCommunicator",
+        "AsmToLoad": "EndPoint",
+        "Properties": {
+          "BaseUrl": "https://reqres.in/api/",
+          "Url": "users?page=2"
+        },
+        "Connectors": [
+          {
+            "Connector": "ForwardConnector",
+            "Component": {
+              "ComponentName": "FormatatedDispayComponent",
+              "AsmToLoad": "Connector.Component",
+              "Connectors": [
+                {
+                  "Connector": "ForwardConnector",
+                  "Component": {
+                    "ComponentName": "EndComponent",
+                    "AsmToLoad": "Connector.Component"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
